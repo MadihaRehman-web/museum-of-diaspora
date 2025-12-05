@@ -1,0 +1,55 @@
+import {
+  faInstagram,
+  faLinkedinIn,
+  faFacebookF,
+} from "@fortawesome/free-brands-svg-icons";
+import Icon from "./Icon";
+import siteLogo from "../assets/site-logo.svg";
+
+let iconsName = [faInstagram, faLinkedinIn, faFacebookF];
+
+const Footer: React.FC = () => {
+  return (
+    <div className="bg-black">
+      <div className=" px-23 pt-22 pb-12 flex justify-between">
+        <div>
+          <p className="text-white font-medium text-2xl leading-14">
+            Connect with us
+          </p>
+          <div className="flex gap-4">
+            {iconsName.map((iconName, index) => (
+              <Icon iconName={iconName} key={index} />
+            ))}
+          </div>
+        </div>
+
+        <div className="bg-amber-300 ">
+          <p className="text-white">
+            Enter your email address to receive our newsletter
+          </p>
+          <form action="">
+            <input
+              type="text"
+              className="text-white px-5 py-3 border border-white outline-0"
+            />
+            <button className="bg-white px-5 py-3 cursor-pointer">
+              Sign up
+            </button>
+          </form>
+          <p className="text-white">Back to the top</p>
+        </div>
+      </div>
+
+      <div className="flex justify-between items-center pt-9 pb-12 border-t border-white/25 px-23">
+        <div>
+          <img src={siteLogo} alt="site-logo" />
+        </div>
+        <p className="font-noto font-normal text-sm text-white/70">
+          © 2022 The Museum, All Right Reserved
+        </p>
+      </div>
+    </div>
+  );
+};
+
+export default Footer;
