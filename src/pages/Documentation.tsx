@@ -4,11 +4,12 @@ import DocumentCardsList from "../apis/documentCardsList";
 import type { DocumentType } from "../apis/documentCardsList";
 import backGround from "../assets/hero-section-documentation-back.png";
 import {
-  Contact,
-  HeroSection,
-  Explore,
   Video,
+  Contact,
+  Explore,
+  BreadCrumb,
   CTASection,
+  HeroSection,
 } from "../components";
 
 const Documentation = () => {
@@ -26,7 +27,9 @@ const Documentation = () => {
         </h1>
       </HeroSection>
 
-      <div className="grid gap-y-15 mx-25 mt-20 mb-10 pt-18 pb-10 border-y border-[#454545]">
+      <BreadCrumb currentPage="Documentation" />
+
+      <div className="grid gap-y-15 mx-25 pt-18 pb-10 border-y border-[#454545]">
         <Video />
         <div className="flex gap-x-50">
           <Explore
@@ -46,7 +49,7 @@ const Documentation = () => {
         </div>
       </div>
 
-      <div className="px-23 pt-5 pb-28">
+      <div className="px-23 pt-10 pb-28">
         <h2 className="text-white font-semibold text-4xl mb-8">
           Gallery Highlights
         </h2>

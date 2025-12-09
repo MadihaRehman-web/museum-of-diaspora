@@ -15,7 +15,7 @@ const MesumeSupport: React.FC<SupportType> = ({ heading }) => {
   }, []);
 
   return (
-    <div className="px-24 pt-20 pb-30">
+    <div className="px-24 pt-12 pb-30">
       <h2 className="text-white font-medium text-[2.5rem] leading-14 font-noto mb-8">
         {heading}
       </h2>

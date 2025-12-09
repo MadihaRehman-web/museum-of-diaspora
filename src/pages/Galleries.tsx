@@ -2,7 +2,14 @@ import { useState, useEffect } from "react";
 import galleryCardsList from "../apis/galleryCardsList";
 import type { GallaryCardType } from "../apis/galleryCardsList";
 import backGround from "../assets/hero-section-gallery-back.jpg";
-import { HeroSection, CTASection, Card, Contact, Explore } from "../components";
+import {
+  Card,
+  Contact,
+  Explore,
+  BreadCrumb,
+  CTASection,
+  HeroSection,
+} from "../components";
 
 const Galleries = () => {
   const [galleryCards, setGallaryCards] = useState<GallaryCardType[]>([]);
@@ -19,7 +26,9 @@ const Galleries = () => {
         </h1>
       </HeroSection>
 
-      <div className="flex gap-x-50 mx-25 mt-20 mb-10 pt-18 pb-28 border-y border-[#454545]">
+      <BreadCrumb currentPage="Galleries" />
+
+      <div className="flex gap-x-50 mx-25 pt-18 pb-28 border-y border-[#454545]">
         <Explore
           heading="Explore more than 60 galleries at the Museum from home."
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -35,7 +44,7 @@ const Galleries = () => {
         <Contact />
       </div>
 
-      <div className="px-23 pt-5 pb-28">
+      <div className="px-23 pt-10 pb-28">
         <h2 className="text-white font-semibold text-4xl mb-8">
           Gallery Highlights
         </h2>
