@@ -1,26 +1,31 @@
 import { NavLink } from "react-router-dom";
 import siteLogo from "../assets/site-logo.svg";
 
+let styles = ({ isActive }: any): string =>
+  `font-medium font-noto ${
+    isActive ? "border-b border-[#B8860B]" : "border-0"
+  } `;
+
 const Header: React.FC = () => {
   return (
-    <div className="bg-black flex justify-between items-center px-20 py-9">
+    <div className="bg-black flex justify-between items-center px-20 py-9 fixed z-1 w-full h-(--header-height)">
       <div>
         <img src={siteLogo} alt="site-logo" />
       </div>
       <nav className="text-white flex gap-8 ">
-        <NavLink to="#" className={() => `font-medium font-noto`}>
+        <NavLink to="/galleries" className={styles}>
           Galleries
         </NavLink>
-        <NavLink to="#" className={() => `font-medium font-noto`}>
+        <NavLink to="/documentation" className={styles}>
           Documentaries
         </NavLink>
-        <NavLink to="#" className={() => `font-medium font-noto`}>
+        <NavLink to="/membership" className={styles}>
           Membership
         </NavLink>
-        <NavLink to="#" className={() => `font-medium font-noto`}>
+        <NavLink to="/blog" className={styles}>
           Blog
         </NavLink>
-        <NavLink to="#" className={() => `font-medium font-noto`}>
+        <NavLink to="/support" className={styles}>
           Support Us
         </NavLink>
       </nav>
