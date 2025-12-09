@@ -1,9 +1,13 @@
-import { Card } from "../components";
+import { Card } from ".";
 import { useEffect, useState } from "react";
 import mesumeCardsList from "../apis/mesumeCardsList";
 import type { MesumeCardType } from "../apis/mesumeCardsList";
 
-const MesumeSupport = () => {
+type SupportType = {
+  heading: string;
+};
+
+const MesumeSupport: React.FC<SupportType> = ({ heading }) => {
   const [mesumeCards, setMesumeCards] = useState<MesumeCardType[]>([]);
 
   useEffect(() => {
@@ -11,9 +15,9 @@ const MesumeSupport = () => {
   }, []);
 
   return (
-    <div className="px-24 pt-30 pb-40">
+    <div className="px-24 pt-20 pb-30">
       <h2 className="text-white font-medium text-[2.5rem] leading-14 font-noto mb-8">
-        Support the Mesume
+        {heading}
       </h2>
       <div className="grid grid-cols-3 gap-10">
         {mesumeCards.map(({ img, heading, description }, index) => (

@@ -1,9 +1,4 @@
-import {
-  CTASection,
-  HeroSection,
-  GallarySlider,
-  MesumeSupport,
-} from "../components";
+import { CTASection, HeroSection, GallarySlider, Support } from "../components";
 import backGround from "../assets/hero-section-home-back.svg";
 
 const Home: React.FC = () => {
@@ -28,22 +23,18 @@ const Home: React.FC = () => {
       <GallarySlider />
 
       <CTASection
-        heading={"We need your support"}
-        description={
-          "Your support is vital and helps the Museum to share the collection with the world."
-        }
-        btnText={"Make a donation"}
+        heading="We need your support"
+        description="Your support is vital and helps the Museum to share the collection with the world."
+        btnText="Make a donation"
       />
 
       {/* Mesume Support  */}
-      <MesumeSupport />
+      <Support heading="Support the Mesume" />
 
       <CTASection
-        heading={"Sign up to our newsletters"}
-        description={
-          "Stay connected and receive all our latest news, online events and ways to visit the Museum from home."
-        }
-        btnText={"Sign up"}
+        heading="Sign up to our newsletters"
+        description="Stay connected and receive all our latest news, online events and ways to visit the Museum from home."
+        btnText="Sign up"
       />
     </div>
   );

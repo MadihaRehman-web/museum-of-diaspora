@@ -8,7 +8,7 @@ import Contact from "./Contact";
 import CTASection from "./CTASection";
 import HeroSection from "./HeroSection";
 import GallarySlider from "./GallarySlider";
-import MesumeSupport from "./MesumeSupport";
+import Support from "./Support";
 
 export {
   Card,
@@ -17,9 +17,9 @@ export {
   Footer,
   Layout,
   Contact,
+  Support,
   Explore,
   CTASection,
   HeroSection,
   GallarySlider,
-  MesumeSupport,
 };

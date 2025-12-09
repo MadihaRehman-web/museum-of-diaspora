@@ -1,5 +1,6 @@
 import Home from "./Home";
 import Galleries from "./Galleries";
-import Documentation from "./documentation";
+import SupportUs from "./SupportUs";
+import Documentation from "./Documentation";
 
-export { Home, Galleries, Documentation };
+export { Home, Galleries, Documentation, SupportUs };

@@ -25,7 +25,7 @@ const Header: React.FC = () => {
         <NavLink to="/blog" className={styles}>
           Blog
         </NavLink>
-        <NavLink to="/support" className={styles}>
+        <NavLink to="/supportus" className={styles}>
           Support Us
         </NavLink>
       </nav>

@@ -1,6 +1,6 @@
 import { Layout } from "./components";
 import { createBrowserRouter } from "react-router-dom";
-import { Documentation, Galleries, Home } from "./pages";
+import { Documentation, Galleries, Home, SupportUs } from "./pages";
 
 const router = createBrowserRouter([
   {
@@ -18,6 +18,10 @@ const router = createBrowserRouter([
       {
         path: "/documentation",
         element: <Documentation />,
+      },
+      {
+        path: "/supportus",
+        element: <SupportUs />,
       },
     ],
   },
