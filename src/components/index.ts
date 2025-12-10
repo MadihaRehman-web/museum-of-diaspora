@@ -8,8 +8,13 @@ import Explore from "./Explore";
 import Contact from "./Contact";
 import CTASection from "./CTASection";
 import BreadCrumb from "./BreadCrumb";
+import AuthBtn from "./button/authBtn";
 import HeroSection from "./HeroSection";
+import SocialSignUp from "./SocialSignUp";
 import GallarySlider from "./GallarySlider";
+import SignInInfo from "./signup/SignInInfo";
+import PersonalInfo from "./signup/PersonalInfo";
+import MembershipRegister from "./signup/MembershipRegister";
 
 export {
   Card,
@@ -19,9 +24,14 @@ export {
   Layout,
   Contact,
   Support,
+  AuthBtn,
   Explore,
   CTASection,
   BreadCrumb,
+  SignInInfo,
   HeroSection,
+  SocialSignUp,
+  PersonalInfo,
   GallarySlider,
+  MembershipRegister,
 };

@@ -1,6 +1,13 @@
 import { Layout } from "./components";
 import { createBrowserRouter, Navigate } from "react-router-dom";
-import { Documentation, Galleries, Home, SupportUs } from "./pages";
+import {
+  Documentation,
+  Galleries,
+  Home,
+  SupportUs,
+  SignUp,
+  SocialSignUp,
+} from "./pages";
 
 const router = createBrowserRouter([
   {
@@ -26,6 +33,14 @@ const router = createBrowserRouter([
       {
         path: "home/supportus",
         element: <SupportUs />,
+      },
+      {
+        path: "/signup",
+        element: <SignUp />,
+      },
+      {
+        path: "/social-signup",
+        element: <SocialSignUp />,
       },
     ],
   },
