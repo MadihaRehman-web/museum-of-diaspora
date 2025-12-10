@@ -1,8 +1,17 @@
 import Home from "./Home";
+import Login from "./Login";
 import SignUp from "./SignUp";
 import Galleries from "./Galleries";
 import SupportUs from "./SupportUs";
 import SocialSignUp from "./SocialSignUp";
 import Documentation from "./Documentation";
 
-export { Home, Galleries, Documentation, SupportUs, SignUp, SocialSignUp };
+export {
+  Home,
+  Login,
+  SignUp,
+  Galleries,
+  SupportUs,
+  SocialSignUp,
+  Documentation,
+};

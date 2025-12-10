@@ -1,4 +1,5 @@
 import Card from "./Card";
+import Input from "./Input";
 import Video from "./Video";
 import Header from "./Header";
 import Footer from "./Footer";
@@ -8,9 +9,10 @@ import Explore from "./Explore";
 import Contact from "./Contact";
 import CTASection from "./CTASection";
 import BreadCrumb from "./BreadCrumb";
-import AuthBtn from "./button/authBtn";
+import AuthBtn from "./button/AuthBtn";
 import HeroSection from "./HeroSection";
 import SocialSignUp from "./SocialSignUp";
+import LogInInfo from "./login/LogInInfo";
 import GallarySlider from "./GallarySlider";
 import SignInInfo from "./signup/SignInInfo";
 import PersonalInfo from "./signup/PersonalInfo";
@@ -19,6 +21,7 @@ import MembershipRegister from "./signup/MembershipRegister";
 export {
   Card,
   Video,
+  Input,
   Header,
   Footer,
   Layout,
@@ -26,6 +29,7 @@ export {
   Support,
   AuthBtn,
   Explore,
+  LogInInfo,
   CTASection,
   BreadCrumb,
   SignInInfo,

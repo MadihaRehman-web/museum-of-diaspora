@@ -1,12 +1,13 @@
 import { Layout } from "./components";
 import { createBrowserRouter, Navigate } from "react-router-dom";
 import {
-  Documentation,
-  Galleries,
   Home,
-  SupportUs,
+  Login,
   SignUp,
+  SupportUs,
+  Galleries,
   SocialSignUp,
+  Documentation,
 } from "./pages";
 
 const router = createBrowserRouter([
@@ -41,6 +42,18 @@ const router = createBrowserRouter([
       {
         path: "/social-signup",
         element: <SocialSignUp />,
+      },
+      {
+        path: "/login",
+        element: <Login />,
+      },
+      {
+        path: "/forget-password",
+        element: <Login />,
+      },
+      {
+        path: "/create-new-password",
+        element: <Login />,
       },
     ],
   },

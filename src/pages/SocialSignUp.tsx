@@ -7,10 +7,10 @@ const SocialSignUp = () => {
         <h1 className="font-bold text-[2rem] leading-10 font-noto text-white">
           Select you role
         </h1>
-        <div className="w-1/2 pt-8">
+        <form className="w-1/2 pt-8">
           <MembershipRegister />
           <AuthBtn label="Continue" />
-        </div>
+        </form>
       </div>
     </div>
   );
