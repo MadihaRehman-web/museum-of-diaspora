@@ -4,6 +4,8 @@ import SignUp from "./SignUp";
 import Galleries from "./Galleries";
 import SupportUs from "./SupportUs";
 import SocialSignUp from "./SocialSignUp";
+import CreateNewPassword from "./CreateNewPassword";
+
 import Documentation from "./Documentation";
 
 export {
@@ -14,4 +16,5 @@ export {
   SupportUs,
   SocialSignUp,
   Documentation,
+  CreateNewPassword,
 };
