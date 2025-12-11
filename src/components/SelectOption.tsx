@@ -2,7 +2,7 @@ type dropDownType = {
   id: string;
   name: string;
   label: string;
-  hiddenText: string;
+  hiddenText?: string;
   optionList: string[];
 };
 import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
@@ -30,9 +30,13 @@ const SelectOption: React.FC<dropDownType> = ({
           id={id}
           className="bg-[#191B20] text-[#CACACA] border border-[#454545] outline-0 py-2 pl-4 pr-8 appearance-none font-noto w-full cursor-pointer"
         >
-          <option value="" hidden>
-            {hiddenText}
-          </option>
+          {hiddenText ? (
+            <option value="" hidden>
+              {hiddenText}
+            </option>
+          ) : (
+            ""
+          )}
           {optionList.map((value: string) => {
             return <option value={value}>{value}</option>;
           })}

@@ -1,15 +1,34 @@
-import video from "../assets/libraryVideo.mp4";
+import { useEffect, useRef, useState } from "react";
+import playSymbol from "../assets/playSymbol.png";
 
 const Video = () => {
+  const docVideoRef = useRef(null);
+  const [videoMode, setVideoMode] = useState(false);
+
+  useEffect(() => {
+    if (videoMode) {
+      docVideoRef.current.play();
+    } else {
+      docVideoRef.current.pause();
+    }
+  }, [videoMode]);
+
   return (
-    <div>
+    <div className="relative">
       <video
-        src={video}
-        controls
-        autoPlay
-        muted
         className="object-cover max-h-[470px] w-full "
-      ></video>
+        ref={docVideoRef}
+        onClick={() => setVideoMode(!videoMode)}
+      >
+        <source src="/videos/libraryVideo.mp4" />
+      </video>
+      <img
+        src={playSymbol}
+        className={`absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] ${
+          videoMode ? "hidden" : "block"
+        }`}
+        onClick={() => setVideoMode(!videoMode)}
+      />
     </div>
   );
 };

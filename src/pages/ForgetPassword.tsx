@@ -16,7 +16,9 @@ const ForgetPassword = () => {
         </p>
         <form className="pt-8">
           <Input label="Email" type="email" id="email" />
-          <AuthBtn label="Continue" />
+          <div className="mt-10">
+            <AuthBtn label="Continue" />
+          </div>
         </form>
       </div>
     </div>

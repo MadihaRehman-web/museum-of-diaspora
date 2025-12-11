@@ -9,8 +9,10 @@ import {
   SocialSignUp,
   Documentation,
   CreateNewPassword,
+  Profile,
 } from "./pages";
 import ForgetPassword from "./pages/ForgetPassword";
+import ChangeResetPassword from "./pages/ChangeResetPassword";
 
 const router = createBrowserRouter([
   {
@@ -56,6 +58,14 @@ const router = createBrowserRouter([
       {
         path: "/create-new-password",
         element: <CreateNewPassword />,
+      },
+      {
+        path: "/profile",
+        element: <Profile />,
+      },
+      {
+        path: "/change/reset-password",
+        element: <ChangeResetPassword />,
       },
     ],
   },

@@ -8,7 +8,7 @@ let styles = ({ isActive }: any): string =>
 
 const Header: React.FC = () => {
   return (
-    <div className="bg-black flex justify-between items-center px-20 py-9 fixed z-1 w-full h-(--header-height)">
+    <div className="bg-black flex justify-between items-center px-40 py-9 fixed z-1 w-full h-(--header-height)">
       <div>
         <img src={siteLogo} alt="site-logo" />
       </div>
