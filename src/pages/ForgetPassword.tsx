@@ -2,7 +2,7 @@ import { Input, AuthBtn } from "../components";
 
 const ForgetPassword = () => {
   return (
-    <div className="pt-(--header-height) bg-[#121418]">
+    <div className="bg-[#121418]">
       <div className="px-20 pt-15 pb-35 w-1/2 ">
         <h1 className="font-bold text-[2rem] leading-10 font-noto text-white mb-10">
           Forgot Password

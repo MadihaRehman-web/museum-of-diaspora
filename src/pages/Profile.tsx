@@ -9,7 +9,7 @@ import {
 
 const Profile = () => {
   return (
-    <div className="pt-(--header-height) bg-[#121418]">
+    <div>
       <div className="py-18 px-45 grid grid-cols-4 gap-20 ">
         <ProfileLink />
         <div>

@@ -4,19 +4,20 @@ import {
   Home,
   Login,
   SignUp,
+  Profile,
+  Curator,
   SupportUs,
   Galleries,
   SocialSignUp,
   Documentation,
   CreateNewPassword,
-  Profile,
 } from "./pages";
 import ForgetPassword from "./pages/ForgetPassword";
 import ChangeResetPassword from "./pages/ChangeResetPassword";
 
 const router = createBrowserRouter([
   {
-    path: "/", // GrandParent /
+    path: "/", // GrandParent
     element: <Layout />,
     children: [
       {
@@ -66,6 +67,10 @@ const router = createBrowserRouter([
       {
         path: "/change/reset-password",
         element: <ChangeResetPassword />,
+      },
+      {
+        path: "/curator",
+        element: <Curator />,
       },
     ],
   },

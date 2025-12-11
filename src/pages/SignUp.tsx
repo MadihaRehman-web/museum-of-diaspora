@@ -8,7 +8,7 @@ import {
 
 const SignUp = () => {
   return (
-    <div className="pt-(--header-height) bg-[#121418]">
+    <div>
       <div className="px-20 pt-15 pb-35">
         <h1 className="font-bold text-[2rem] leading-10 font-noto text-white">
           Create New User Account

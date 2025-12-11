@@ -3,7 +3,7 @@ import backGround from "../assets/hero-section-home-back.svg";
 
 const Home: React.FC = () => {
   return (
-    <div className="bg-black ">
+    <div>
       <HeroSection backGround={backGround} element="home">
         <div className="bg-white w-80 p-8 flex flex-col gap-3">
           <p className="font-noto font-semibold text-2xl leading-8">

@@ -11,7 +11,7 @@ const ChangeResetPassword = () => {
   const [step, setStep] = useState("step1");
 
   return (
-    <div className="pt-(--header-height) bg-[#121418]">
+    <div className="bg-[#121418]">
       <div className="py-18 px-45 flex gap-20">
         <ProfileLink />
         <div className="w-1/2">

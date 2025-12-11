@@ -1,6 +1,7 @@
 import Home from "./Home";
 import Login from "./Login";
 import SignUp from "./SignUp";
+import Curator from "./Curator";
 import Profile from "./Profile";
 import Galleries from "./Galleries";
 import SupportUs from "./SupportUs";
@@ -14,6 +15,7 @@ export {
   Login,
   SignUp,
   Profile,
+  Curator,
   Galleries,
   SupportUs,
   SocialSignUp,
