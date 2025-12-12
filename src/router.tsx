@@ -11,6 +11,8 @@ import {
   SocialSignUp,
   Documentation,
   CreateNewPassword,
+  ContentSubmission,
+  FAQs,
 } from "./pages";
 import ForgetPassword from "./pages/ForgetPassword";
 import ChangeResetPassword from "./pages/ChangeResetPassword";
@@ -71,6 +73,14 @@ const router = createBrowserRouter([
       {
         path: "/curator",
         element: <Curator />,
+      },
+      {
+        path: "/content",
+        element: <ContentSubmission />,
+      },
+      {
+        path: "/FAQs",
+        element: <FAQs />,
       },
     ],
   },
