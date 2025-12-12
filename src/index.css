@@ -3,6 +3,8 @@
 @theme {
   --font-noto: "Noto Sans", sans-serif;
   --header-height: 145px;
+  --sidebar-width: 280px;
+  --profileSidebar-width: 400px;
 }
 
 /* Hide number input arrows */
@@ -14,4 +16,8 @@ input[type="number"]::-webkit-outer-spin-button {
 
 input[type="number"] {
   -moz-appearance: textfield; /* Firefox */
+}
+
+body {
+  background-color: #121418;
 }

@@ -16,6 +16,8 @@ import {
 } from "./pages";
 import ForgetPassword from "./pages/ForgetPassword";
 import ChangeResetPassword from "./pages/ChangeResetPassword";
+import AdminLayout from "./components/admin/AdminLayout";
+import Dashboard from "./pages/admin/Dashboard";
 
 const router = createBrowserRouter([
   {
@@ -81,6 +83,16 @@ const router = createBrowserRouter([
       {
         path: "/FAQs",
         element: <FAQs />,
+      },
+    ],
+  },
+  {
+    path: "/admin",
+    element: <AdminLayout />,
+    children: [
+      {
+        index: true,
+        element: <Dashboard />,
       },
     ],
   },

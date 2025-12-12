@@ -8,6 +8,7 @@ import Support from "./Support";
 import Explore from "./Explore";
 import Contact from "./Contact";
 import OtpInput from "./OtpInput";
+import Sidebar from "./admin/Sidebar";
 import CTASection from "./CTASection";
 import BreadCrumb from "./BreadCrumb";
 import AuthBtn from "./button/AuthBtn";
@@ -37,6 +38,7 @@ export {
   Contact,
   Support,
   AuthBtn,
+  Sidebar,
   Explore,
   OtpInput,
   LogInInfo,
