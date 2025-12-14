@@ -13,6 +13,7 @@ import CTASection from "./CTASection";
 import BreadCrumb from "./BreadCrumb";
 import AuthBtn from "./button/AuthBtn";
 import HeroSection from "./HeroSection";
+import UserCard from "./admin/UserCard";
 import ProfileLink from "./ProfileLink";
 import InputWraper from "./InputWraper";
 import SocialSignUp from "./SocialSignUp";
@@ -41,6 +42,7 @@ export {
   Sidebar,
   Explore,
   OtpInput,
+  UserCard,
   LogInInfo,
   CTASection,
   BreadCrumb,

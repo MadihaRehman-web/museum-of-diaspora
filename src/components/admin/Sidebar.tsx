@@ -12,7 +12,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const navStyles = ({ isActive }: any): string => {
   return `font-medium text-lg font-noto ${
-    isActive ? "text-[#454545]" : "text-white"
+    isActive ? "text-white" : "text-[#454545]"
   } flex items-center`;
 };
 

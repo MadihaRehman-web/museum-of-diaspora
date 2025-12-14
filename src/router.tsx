@@ -8,16 +8,19 @@ import {
   Curator,
   SupportUs,
   Galleries,
+  Subscription,
   SocialSignUp,
   Documentation,
   CreateNewPassword,
   ContentSubmission,
   FAQs,
 } from "./pages";
-import ForgetPassword from "./pages/ForgetPassword";
-import ChangeResetPassword from "./pages/ChangeResetPassword";
-import AdminLayout from "./components/admin/AdminLayout";
+import Users from "./pages/admin/users";
 import Dashboard from "./pages/admin/Dashboard";
+import ForgetPassword from "./pages/ForgetPassword";
+import ContentDetail from "./pages/admin/ContentDetail";
+import AdminLayout from "./components/admin/AdminLayout";
+import ChangeResetPassword from "./pages/ChangeResetPassword";
 
 const router = createBrowserRouter([
   {
@@ -91,8 +94,20 @@ const router = createBrowserRouter([
     element: <AdminLayout />,
     children: [
       {
-        index: true,
+        path: "dashboard",
         element: <Dashboard />,
+      },
+      {
+        path: "content-detail",
+        element: <ContentDetail />,
+      },
+      {
+        path: "users",
+        element: <Users />,
+      },
+      {
+        path: "subscription",
+        element: <Subscription />,
       },
     ],
   },

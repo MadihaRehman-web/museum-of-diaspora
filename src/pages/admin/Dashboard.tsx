@@ -1,5 +1,5 @@
 import dashboard from "../../assets/dashboard.png";
-import Table from "../../components/admin/AdminTable";
+import Table from "../../components/admin/Table";
 
 const Dashboard = () => {
   return (
