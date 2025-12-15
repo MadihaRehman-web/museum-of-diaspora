@@ -3,11 +3,11 @@ import { UserCard } from "../../components";
 
 const Users = () => {
   return (
-    <div className="p-11">
+    <div className="p-8">
       <h1 className="text-white font-noto text-[2rem] leading-10 font-bold">
         Users Info
       </h1>
-      <div className="grid grid-cols-3 my-12 gap-8">
+      <div className="grid grid-cols-3 my-12 gap-5">
         {UsersList.map(
           ({ userProfile, name, email, joinDate, location }, index) => (
             <UserCard

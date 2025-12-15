@@ -1,7 +1,17 @@
-import { faXmark, faCheck } from "@fortawesome/free-solid-svg-icons";
+import { useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faXmark,
+  faCheck,
+  faPenToSquare,
+} from "@fortawesome/free-solid-svg-icons";
 
 const Subscription = () => {
+  const navigate = useNavigate();
+
+  const clickHandler = () => {
+    navigate("/admin/edit-subscription");
+  };
   return (
     <div className="p-15 flex flex-col gap-11">
       <h1 className="font-bold text-[2rem] leading-10 font-noto text-white">
@@ -11,13 +21,19 @@ const Subscription = () => {
         <h2 className="font-semibold text-[2rem] leading-11 font-noto text-white">
           Get the best pricing plan
         </h2>
-        <p className="font-normal text-xl leading-9 font-noto text-[#929292] my-3">
+        <p className="font-normal text-lg leading-9 font-noto text-[#929292] my-3">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
       </div>
       <div className="grid grid-cols-2 gap-12">
-        <div className="bg-[#191B20] px-10 py-8 flex flex-col gap-8">
+        <div className="bg-[#191B20] px-10 py-8 flex flex-col gap-8 relative">
+          <span
+            className="text-[#9B9B9B] text-sm absolute right-4 top-4 cursor-pointer"
+            onClick={clickHandler}
+          >
+            <FontAwesomeIcon icon={faPenToSquare} />
+          </span>
           <p className="font-semibold text-xl font-noto text-white">FREEMIUM</p>
           <p className="font-normal text-base font-noto leading-[22px] text-white">
             <span className="font-semibold text-[2rem] font-noto text-white">
@@ -49,7 +65,13 @@ const Subscription = () => {
             Select Now
           </button>
         </div>
-        <div className="bg-[#191B20] px-10 py-8 flex flex-col gap-8">
+        <div className="bg-[#191B20] px-10 py-8 flex flex-col gap-8 relative">
+          <span
+            className="text-[#9B9B9B] text-sm absolute right-4 top-4 cursor-pointer"
+            onClick={clickHandler}
+          >
+            <FontAwesomeIcon icon={faPenToSquare} />
+          </span>
           <p className="font-semibold text-xl font-noto text-white">PREEMIUM</p>
           <p className="font-normal text-base font-noto leading-[22px] text-white">
             <span className="font-semibold text-[2rem] font-noto text-white">

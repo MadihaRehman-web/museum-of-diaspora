@@ -3,8 +3,8 @@
 @theme {
   --font-noto: "Noto Sans", sans-serif;
   --header-height: 145px;
-  --sidebar-width: 280px;
-  --profileSidebar-width: 400px;
+  --sidebar-width: 260px;
+  --profileSidebar-width: 360px;
 }
 
 /* Hide number input arrows */

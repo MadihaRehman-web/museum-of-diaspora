@@ -13,19 +13,19 @@ const Header: React.FC = () => {
         <img src={siteLogo} alt="site-logo" />
       </div>
       <nav className="text-white flex gap-8 ">
-        <NavLink to="/home/galleries" className={styles}>
+        <NavLink to="/galleries" className={styles}>
           Galleries
         </NavLink>
-        <NavLink to="/home/documentation" className={styles}>
+        <NavLink to="/documentation" className={styles}>
           Documentaries
         </NavLink>
-        <NavLink to="/home/membership" className={styles}>
+        <NavLink to="/membership" className={styles}>
           Membership
         </NavLink>
-        <NavLink to="/home/blog" className={styles}>
+        <NavLink to="/blog" className={styles}>
           Blog
         </NavLink>
-        <NavLink to="/home/supportus" className={styles}>
+        <NavLink to="/supportus" className={styles}>
           Support Us
         </NavLink>
       </nav>

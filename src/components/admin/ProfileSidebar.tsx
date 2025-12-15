@@ -9,7 +9,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const ProfileSidebar = () => {
   return (
-    <div className="bg-black fixed right-0 top-0 w-100 h-screen px-7 py-8 ">
+    <div className="bg-black fixed right-0 top-0 w-90 h-screen px-7 py-8 ">
       <div>
         <div className="flex gap-3">
           <input

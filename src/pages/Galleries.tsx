@@ -19,7 +19,7 @@ const Galleries = () => {
   }, []);
 
   return (
-    <div>
+    <div className="pt-(--header-height)">
       <HeroSection backGround={backGround} element="gallery">
         <h1 className="font-bold text-[4rem] leading-10 text-white font-noto">
           Excepteur sint occan

@@ -1,26 +1,28 @@
 import { Layout } from "./components";
 import { createBrowserRouter, Navigate } from "react-router-dom";
 import {
+  FAQs,
   Home,
   Login,
+  Users,
   SignUp,
   Profile,
   Curator,
   SupportUs,
+  EditUsers,
   Galleries,
+  Dashboard,
+  AdminLayout,
   Subscription,
   SocialSignUp,
   Documentation,
+  ContentDetail,
+  ForgetPassword,
+  EditSubscription,
   CreateNewPassword,
   ContentSubmission,
-  FAQs,
+  ChangeResetPassword,
 } from "./pages";
-import Users from "./pages/admin/users";
-import Dashboard from "./pages/admin/Dashboard";
-import ForgetPassword from "./pages/ForgetPassword";
-import ContentDetail from "./pages/admin/ContentDetail";
-import AdminLayout from "./components/admin/AdminLayout";
-import ChangeResetPassword from "./pages/ChangeResetPassword";
 
 const router = createBrowserRouter([
   {
@@ -36,55 +38,59 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "home/galleries",
+        path: "galleries",
         element: <Galleries />,
       },
       {
-        path: "home/documentation",
+        path: "documentation",
         element: <Documentation />,
       },
       {
-        path: "home/supportus",
+        path: "supportus",
         element: <SupportUs />,
       },
       {
-        path: "/signup",
+        path: "content-detail",
+        element: <ContentDetail />,
+      },
+      {
+        path: "signup",
         element: <SignUp />,
       },
       {
-        path: "/social-signup",
+        path: "social-signup",
         element: <SocialSignUp />,
       },
       {
-        path: "/login",
+        path: "login",
         element: <Login />,
       },
       {
-        path: "/forget-password",
+        path: "forget-password",
         element: <ForgetPassword />,
       },
       {
-        path: "/create-new-password",
+        path: "create-new-password",
         element: <CreateNewPassword />,
       },
       {
-        path: "/profile",
+        path: "profile",
         element: <Profile />,
       },
       {
-        path: "/change/reset-password",
+        path: "change/reset-password",
         element: <ChangeResetPassword />,
       },
       {
-        path: "/curator",
+        path: "curator",
         element: <Curator />,
       },
       {
-        path: "/content",
+        path: "content",
         element: <ContentSubmission />,
       },
       {
-        path: "/FAQs",
+        path: "FAQs",
         element: <FAQs />,
       },
     ],
@@ -93,6 +99,10 @@ const router = createBrowserRouter([
     path: "/admin",
     element: <AdminLayout />,
     children: [
+      {
+        index: true,
+        element: <Navigate to="dashboard" />,
+      },
       {
         path: "dashboard",
         element: <Dashboard />,
@@ -106,8 +116,16 @@ const router = createBrowserRouter([
         element: <Users />,
       },
       {
+        path: "edit-user",
+        element: <EditUsers />,
+      },
+      {
         path: "subscription",
         element: <Subscription />,
+      },
+      {
+        path: "edit-subscription",
+        element: <EditSubscription />,
       },
     ],
   },

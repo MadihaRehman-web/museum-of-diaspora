@@ -11,7 +11,7 @@ import siteLogo from "../../assets/site-logo.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const navStyles = ({ isActive }: any): string => {
-  return `font-medium text-lg font-noto ${
+  return `font-medium text-base font-noto ${
     isActive ? "text-white" : "text-[#454545]"
   } flex items-center`;
 };
@@ -19,21 +19,21 @@ const navStyles = ({ isActive }: any): string => {
 const Sidebar = () => {
   return (
     <>
-      <div className="w-70 bg-black h-screen pt-12 pl-15 fixed">
+      <div className="w-65 bg-black h-screen pt-12 pl-15 fixed">
         <div>
           <img src={siteLogo} />
         </div>
         <div className="flex flex-col gap-10 mt-15">
           <NavLink to="/admin/dashboard" className={navStyles}>
-            <FontAwesomeIcon icon={faGrip} className="text-2xl mr-3" />
+            <FontAwesomeIcon icon={faGrip} className="text-xl mr-3" />
             Dashboard
           </NavLink>
           <NavLink to="/admin/users" className={navStyles}>
-            <FontAwesomeIcon icon={faUsers} className="text-2xl mr-3" />
+            <FontAwesomeIcon icon={faUsers} className="text-xl mr-3" />
             Users
           </NavLink>
           <NavLink to="/admin/subscription" className={navStyles}>
-            <FontAwesomeIcon icon={faLayerGroup} className="text-2xl mr-3" />
+            <FontAwesomeIcon icon={faLayerGroup} className="text-xl mr-3" />
             Subscription
           </NavLink>
         </div>

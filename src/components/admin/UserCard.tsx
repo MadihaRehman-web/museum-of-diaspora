@@ -1,6 +1,22 @@
+import { useNavigate } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPenToSquare } from "@fortawesome/free-solid-svg-icons";
+
 const UserCard = ({ userProfile, name, email, location, joinDate }: any) => {
+  const navigate = useNavigate();
+
+  const clickHandler = () => {
+    navigate("/admin/edit-user");
+  };
+
   return (
-    <div className="bg-[#191B20] rounded-[10px] px-6 py-4 flex flex-col items-center">
+    <div className="bg-[#191B20] rounded-[10px] px-6 py-4 flex flex-col items-center relative">
+      <span
+        className="text-[#9B9B9B] text-sm absolute right-3 top-2 cursor-pointer"
+        onClick={clickHandler}
+      >
+        <FontAwesomeIcon icon={faPenToSquare} />
+      </span>
       <img src={userProfile} alt="" className="h-30 w-30 rounded-[50%] mb-3" />
       <p className="text-[#CACACA] text-base leading-6 font-noto font-semibold my-2">
         {name}

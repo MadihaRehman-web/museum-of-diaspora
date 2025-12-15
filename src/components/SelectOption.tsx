@@ -2,6 +2,7 @@ type dropDownType = {
   id: string;
   name: string;
   label: string;
+  required?: boolean;
   optionList: string[];
 };
 import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
@@ -11,6 +12,7 @@ const SelectOption: React.FC<dropDownType> = ({
   id,
   name,
   label,
+  required = true,
   optionList,
 }) => {
   return (
@@ -20,7 +22,7 @@ const SelectOption: React.FC<dropDownType> = ({
         className="text-[#CACACA] font-semibold text-base leading-6 font-noto my-1"
       >
         {label}
-        <span className="text-red-500">*</span>
+        {required && <span className="text-red-500">*</span>}
       </label>
       <div className="relative">
         <select

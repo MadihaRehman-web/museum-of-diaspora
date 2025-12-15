@@ -6,7 +6,7 @@ const Layout: React.FC = () => {
   return (
     <>
       <Header />
-      <div className="pt-(--header-height) bg-black">
+      <div className="bg-black">
         <Outlet />
       </div>
       <Footer />
