@@ -21,6 +21,7 @@ import {
   EditSubscription,
   CreateNewPassword,
   ContentSubmission,
+  ContentDetailAdmin,
   ChangeResetPassword,
 } from "./pages";
 
@@ -108,8 +109,8 @@ const router = createBrowserRouter([
         element: <Dashboard />,
       },
       {
-        path: "content-detail",
-        element: <ContentDetail />,
+        path: "content-detail-admin",
+        element: <ContentDetailAdmin />,
       },
       {
         path: "users",

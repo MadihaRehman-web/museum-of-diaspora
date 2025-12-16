@@ -22,16 +22,16 @@ const Documentation = () => {
   return (
     <div className="pt-(--header-height)">
       <HeroSection backGround={backGround}>
-        <h1 className="font-bold text-[4rem] leading-10 text-white font-noto">
+        <h1 className="font-bold text-4xl md:text-[4rem] leading-10 text-white font-noto">
           Documentaries
         </h1>
       </HeroSection>
 
       <BreadCrumb currentPage="Documentation" />
 
-      <div className="grid gap-y-15 mx-25 pt-18 pb-10 border-y border-[#454545]">
+      <div className="grid gap-y-15 mx-8 sm:mx-15 lg:mx-25 pt-18 pb-10 border-y border-[#454545]">
         <Video />
-        <div className="flex gap-x-50">
+        <div className="flex flex-col md:flex-row gap-x-20 xl:gap-x-50">
           <Explore
             heading={
               "Explore more than 60 Documentaries at the Museum from home."
@@ -49,11 +49,11 @@ const Documentation = () => {
         </div>
       </div>
 
-      <div className="px-23 pt-10 pb-28">
+      <div className=" px-10 md:px-15 lg:px-23 pt-10 pb-28">
         <h2 className="text-white font-semibold text-4xl mb-8">
           Gallery Highlights
         </h2>
-        <div className="grid grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
           {docCards.map(({ img, heading, description }) => (
             <Card img={img} heading={heading} description={description} />
           ))}

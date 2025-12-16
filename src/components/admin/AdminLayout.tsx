@@ -6,7 +6,7 @@ const AdminLayout = () => {
   return (
     <>
       <Sidebar />
-      <div className="pl-(--sidebar-width) pr-(--profileSidebar-width)">
+      <div className="lg:pl-[260px] xl:pl-[260px] xl:pr-[360px]">
         <Outlet />
       </div>
       <ProfileSidebar />

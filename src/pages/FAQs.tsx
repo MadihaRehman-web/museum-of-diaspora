@@ -37,11 +37,11 @@ const FAQs = () => {
   };
 
   return (
-    <div className="bg-[#000000] py-10 px-28 flex gap-13 flex-col items-center">
-      <h1 className="font-bold text-4xl leading-10 font-noto text-white">
+    <div className="bg-[#000000] py-10 px-10 md:px-28 flex gap-13 flex-col items-center pt-[calc(var(--header-height)+4rem)]">
+      <h1 className="font-bold text-2xl sm:text-4xl leading-10 font-noto text-white">
         Frequently asked questions
       </h1>
-      <div className="w-1/2 flex border border-[#CACACA]">
+      <div className="lg:w-1/2 flex border border-[#CACACA]">
         <input
           type="search"
           placeholder="Search FAQs"
@@ -52,13 +52,13 @@ const FAQs = () => {
         </button>
       </div>
       <div>
-        <p className="font-medium text-xl leading-10 font-noto text-[#CACACA] border-b border-[#454545] text-center w-screen pb-4">
+        <p className="font-medium text-base sm:text-xl leading-10 font-noto text-[#CACACA] border-b border-[#454545] text-center w-screen pb-4">
           Choose a question to quickly find the help you need
         </p>
-        <div className="w-2/3 mx-auto my-10">
+        <div className="lg:w-2/3 px-8 mx-auto my-10">
           {quesAnsList.map(({ question, answer }, index) => (
             <div key={index}>
-              <div className="text-white font-noto font-medium text-xl leading-6 bg-[#191B20] py-4 px-4 border border-[#454545] flex justify-between my-6">
+              <div className="text-white font-noto font-medium text-base sm:text-xl leading-6 bg-[#191B20] p-2 sm:py-4 sm:px-4 border border-[#454545] flex gap-3 items-center justify-between my-6">
                 <h2>
                   <span>Q.&nbsp;</span>
                   {question}
@@ -76,7 +76,7 @@ const FAQs = () => {
               </div>{" "}
               {openIndex === index && (
                 <p
-                  className={`text-[#CACACA] font-noto text-xl leading-9 pt-5 pb-6 px-6 font-light`}
+                  className={`text-[#CACACA] font-noto text-base sm:text-xl leading-6 sm:leading-9 sm:pt-5 sm:pb-6 px-6 font-light`}
                 >
                   <span className="text-white font-medium">A.&nbsp;</span>
                   {answer}

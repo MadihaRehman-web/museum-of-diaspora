@@ -6,7 +6,7 @@ type PageType = {
 
 const BreadCrumb: React.FC<PageType> = ({ currentPage }) => {
   return (
-    <div className="flex items-center gap-4 text-xl leading-10 font-noto px-25 py-5">
+    <div className="flex items-center gap-4 text-lg sm:text-xl leading-10 font-noto px-8 sm:px-25 py-5">
       <NavLink to={"/home"} className={`underline text-white font-bold pb-0`}>
         Home
       </NavLink>

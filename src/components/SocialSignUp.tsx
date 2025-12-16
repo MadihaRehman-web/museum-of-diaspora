@@ -14,7 +14,7 @@ const SocialSignUp = () => {
       <p className="text-base font-normal leading-10 font-noto text-[#929292]">
         Link your social account and Sign up in seconds.
       </p>
-      <div className="flex gap-5 mt-8">
+      <div className="flex flex-col md:flex-row gap-5 mt-8">
         <SocialBtn
           label="Facebook"
           color="bg-[#2060BF]"

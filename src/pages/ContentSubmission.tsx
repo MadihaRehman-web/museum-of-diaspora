@@ -2,11 +2,11 @@ import { AuthBtn, Input, SelectOption } from "../components";
 
 const ContentSubmission = () => {
   return (
-    <div className="bg-[#121418] py-18 px-28">
-      <h1 className="font-bold text-[2rem] leading-10 font-noto text-white mb-10">
+    <div className="bg-[#121418] py-18 px-8 lg:px-28 pt-[calc(var(--header-height)+4rem)]">
+      <h1 className="font-bold text-2xl sm:text-[2rem] leading-10 font-noto text-white mb-5 sm:mb-10">
         Content Submission
       </h1>
-      <div className="grid gap-15 grid-cols-2">
+      <div className="grid gap-15 md:grid-cols-2">
         <div>
           <h2 className="font-semibold text-xl leading-10 font-noto border-b pb-2 border-[#454545] text-[#CACACA] ">
             Submitter Information

@@ -21,14 +21,14 @@ const Galleries = () => {
   return (
     <div className="pt-(--header-height)">
       <HeroSection backGround={backGround} element="gallery">
-        <h1 className="font-bold text-[4rem] leading-10 text-white font-noto">
+        <h1 className="font-bold text-4xl md:text-[4rem] leading-11 text-white font-noto">
           Excepteur sint occan
         </h1>
       </HeroSection>
 
       <BreadCrumb currentPage="Galleries" />
 
-      <div className="flex gap-x-50 mx-25 pt-18 pb-28 border-y border-[#454545]">
+      <div className="flex flex-col lg:flex-row gap-x-20 xl:gap-x-50 mx-5 sm:mx-15 xl:mx-25 pt-18 pb-28 border-y border-[#454545]">
         <Explore
           heading="Explore more than 60 galleries at the Museum from home."
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -44,11 +44,11 @@ const Galleries = () => {
         <Contact />
       </div>
 
-      <div className="px-23 pt-10 pb-28">
+      <div className="px-5 sm:px-15 xl:px-23 pt-10 pb-28">
         <h2 className="text-white font-semibold text-4xl mb-8">
           Gallery Highlights
         </h2>
-        <div className="grid grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
           {galleryCards.map(({ img, heading, description }) => {
             return (
               <Card img={img} heading={heading} description={description} />

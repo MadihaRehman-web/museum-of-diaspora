@@ -9,25 +9,25 @@ import {
 
 const Profile = () => {
   return (
-    <div>
-      <div className="py-18 px-45 grid grid-cols-4 gap-20 ">
+    <div className="pt-(--header-height)">
+      <div className="py-18 px-5 xl:px-45 grid md:grid-cols-4 gap-10 xl:gap-20 ">
         <ProfileLink />
         <div>
-          <h2 className="font-bold text-[2rem] leading-10 font-noto text-white">
+          <h2 className="font-bold text-2xl xl:text-[2rem] leading-10 font-noto text-white">
             My Account
           </h2>
-          <div className="mt-10">
-            <h3 className="font-semibold text-xl text-[#CACACA] leading-10 font-noto border-b pb-4 border-[#454545]">
+          <div className="sm:mt-10">
+            <h3 className="font-semibold text-lg lg:text-xl text-[#CACACA] leading-10 font-noto border-b pb-4 border-[#454545]">
               Profile picture
             </h3>
             <img
               src={avator}
               alt=""
-              className="max-h-50 max-w-50 rounded-[50%] border-5 border-white my-12"
+              className="lg:max-h-50 lg:max-w-50 max-h-30 max-w-30 rounded-[50%] border-5 border-white my-5 sm:my-12"
             />
           </div>
         </div>
-        <div className="mt-20 col-span-2">
+        <div className="md:mt-20 sm:col-span-2">
           <h3 className="font-semibold text-xl text-[#CACACA] leading-10 font-noto border-b pb-4 border-[#454545]">
             Personal Information
           </h3>

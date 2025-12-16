@@ -2,9 +2,9 @@ import { Input, AuthBtn } from "../components";
 
 const CreateNewPassword = () => {
   return (
-    <div className="bg-[#121418]">
-      <div className="px-20 pt-15 pb-35 w-1/2 ">
-        <h1 className="font-bold text-[2rem] leading-10 font-noto text-white mb-10">
+    <div className="bg-[#121418] pt-(--header-height)">
+      <div className="px-10 xl:px-20 pt-15 pb-35 md:w-1/2 ">
+        <h1 className="font-bold text-2xl sm:text-[2rem] leading-10 font-noto text-white mb-10">
           Create New Password
         </h1>
         <h2 className="font-semibold text-xl leading-10 font-noto border-b pb-2 border-[#454545] text-[#CACACA] ">

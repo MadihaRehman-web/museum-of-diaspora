@@ -14,9 +14,9 @@ const Video = () => {
   }, [videoMode]);
 
   return (
-    <div className="relative">
+    <div className="relative max-h-[470px] w-full">
       <video
-        className="object-cover max-h-[470px] w-full "
+        className="object-cover h-full w-full "
         ref={docVideoRef}
         onClick={() => setVideoMode(!videoMode)}
       >

@@ -10,15 +10,16 @@ import SupportUs from "./SupportUs";
 import Dashboard from "./admin/Dashboard";
 import SocialSignUp from "./SocialSignUp";
 import EditUsers from "./admin/EditUsers";
+import ContentDetail from "./ContentDetail";
 import Documentation from "./Documentation";
 import ForgetPassword from "./ForgetPassword";
 import Subscription from "./admin/Subscription";
-import ContentDetail from "./admin/ContentDetail";
 import CreateNewPassword from "./CreateNewPassword";
 import ContentSubmission from "./ContentSubmission";
 import ChangeResetPassword from "./ChangeResetPassword";
 import EditSubscription from "./admin/EditSubscription";
 import AdminLayout from "../components/admin/AdminLayout";
+import ContentDetailAdmin from "./admin/ContentDetailAdmin";
 
 export {
   FAQs,
@@ -41,5 +42,6 @@ export {
   EditSubscription,
   CreateNewPassword,
   ContentSubmission,
+  ContentDetailAdmin,
   ChangeResetPassword,
 };

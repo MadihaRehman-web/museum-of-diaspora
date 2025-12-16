@@ -11,7 +11,7 @@ let iconsName = [faInstagram, faLinkedinIn, faFacebookF];
 const Footer: React.FC = () => {
   return (
     <div className="bg-black">
-      <div className=" px-23 pt-22 pb-12 grid grid-cols-2">
+      <div className="px-5 sm:px-15 lg:px-23 pt-10 sm:pt-22 pb-12 grid md:grid-cols-2 gap-8">
         <div>
           <p className="text-white font-medium text-2xl leading-14">
             Connect with us
@@ -32,7 +32,7 @@ const Footer: React.FC = () => {
               type="email"
               className="text-white px-5 py-3 border border-white outline-0 flex-1"
             />
-            <button className="bg-white px-5 py-3 cursor-pointer">
+            <button className="bg-white px-3 sm:px-5 py-3 cursor-pointer">
               Sign up
             </button>
           </form>
@@ -40,7 +40,7 @@ const Footer: React.FC = () => {
         </div>
       </div>
 
-      <div className="flex justify-between items-center pt-9 pb-12 border-t border-white/25 px-23">
+      <div className="flex justify-between items-center gap-3 p-8 sm:pt-9 sm:pb-12 border-t border-white/25 px-5 sm:px-23">
         <div>
           <img src={siteLogo} alt="site-logo" />
         </div>

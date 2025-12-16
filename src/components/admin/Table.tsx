@@ -22,7 +22,7 @@ const Table = () => {
           </th>
         </tr>
       </thead>
-      <tbody className="text-white font-medium text-base leading-6">
+      <tbody className="text-white font-medium overflow-x-auto text-base leading-6">
         {TableData.map((items, index) => {
           return (
             <tr className="my-8" key={index}>

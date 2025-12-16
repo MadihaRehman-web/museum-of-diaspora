@@ -2,14 +2,14 @@ import { AuthBtn, ProfileLink } from "../components";
 
 const Curator = () => {
   return (
-    <div className="bg-[#121418] py-18 px-40 flex gap-20">
+    <div className="bg-[#121418] pt-[calc(var(--header-height)+5rem)] py-18 px-10 xl:px-40 flex flex-col lg:flex-row gap-20">
       <ProfileLink />
       <div className="flex-1">
         <h1 className="font-bold text-[2rem] leading-10 font-noto text-white mb-10">
           Curator Section
         </h1>
         <div className="mt-15">
-          <table className="w-full table-fixed text-center">
+          <table className="w-full table-auto text-center">
             <thead>
               <tr className="text-[#CACACA] border-b border-[#454545] font-medium text-sm leading-10 font-noto">
                 <th>Image</th>
@@ -21,7 +21,7 @@ const Curator = () => {
               </tr>
             </thead>
             <tbody>
-              <tr>
+              <tr className=" ">
                 <td>
                   <img
                     src="/CuratorImages/curator1.jpg"
@@ -60,7 +60,7 @@ const Curator = () => {
                   </select>
                 </td>
               </tr>
-              <tr>
+              <tr className="">
                 <td>
                   <img
                     src="/CuratorImages/curator1.jpg"
