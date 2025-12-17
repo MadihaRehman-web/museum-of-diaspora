@@ -7,7 +7,7 @@ const Users = () => {
       <h1 className="text-white font-noto text-[2rem] leading-10 font-bold">
         Users Info
       </h1>
-      <div className="grid grid-cols-3 my-12 gap-5">
+      <div className="grid sm:grid-cols-2 md:grid-cols-3 my-12 gap-5">
         {UsersList.map(
           ({ userProfile, name, email, joinDate, location }, index) => (
             <UserCard

@@ -16,7 +16,7 @@ const ProfileSidebar = () => {
     <>
       <button
         onClick={() => setOpen(true)}
-        className="xl:hidden fixed top-5 right-5 z-50 text-white text-2xl cursor-po"
+        className="xl:hidden fixed top-5 right-5 z-50 text-white text-2xl cursor-pointer"
       >
         <FontAwesomeIcon icon={faBars} />
       </button>
@@ -57,7 +57,7 @@ const ProfileSidebar = () => {
             <img src={admin} className="h-38 max-w-38 rounded-full" />
             <h1 className="text-white text-2xl font-semibold">Jenny Wilson</h1>
             <h2 className="text-[#9B9B9B] text-xs">JennyWilson@email.com</h2>
-            <button className="text-[#FF5656] text-sm">
+            <button className="text-[#FF5656] text-sm cursor-pointer">
               <FontAwesomeIcon
                 icon={faArrowRightFromBracket}
                 className="mr-2"

@@ -4,11 +4,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const ContentDetail = () => {
   return (
-    <div className="p-11">
-      <h1 className="text-white font-noto text-[2rem] leading-10 font-bold mb-10">
+    <div className="px-8 sm:px-11 py-15">
+      <h1 className="text-white font-noto text-3xl md:text-[2rem] leading-10 font-bold mb-10">
         Content Detail
       </h1>
-      <div className="grid grid-cols-2">
+      <div className="grid sm:grid-cols-2 gap-8">
         <div className="flex gap-5">
           <img
             src="/CuratorImages/curator1.jpg"
@@ -23,7 +23,7 @@ const ContentDetail = () => {
             </p>
           </div>
         </div>
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-2 sm:place-items-center md:place-items-start">
           <p className="font-semibold text-base text-[#CACACA] leading-6 font-noto">
             Status
           </p>
@@ -46,7 +46,7 @@ const ContentDetail = () => {
         <h2 className="bg-[#191B20] font-semibold text-sm text-white leading-6 font-noto py-3 pl-7 rounded-[10px]">
           Personal details
         </h2>
-        <div className="grid grid-cols-2 p-8">
+        <div className="grid sm:grid-cols-2 gap-8 p-8">
           <div className="flex flex-col gap-8">
             <div className="flex flex-col gap-2">
               <p className="font-semibold text-base text-[#CACACA] leading-6 font-noto">
@@ -65,7 +65,7 @@ const ContentDetail = () => {
               </p>
             </div>
           </div>
-          <div className="flex flex-col gap-8">
+          <div className="flex flex-col gap-8 sm:place-items-center md:place-items-start">
             <div className="flex flex-col gap-2">
               <p className="font-semibold text-base text-[#CACACA] leading-6 font-noto">
                 Phone Number
@@ -89,7 +89,7 @@ const ContentDetail = () => {
         <h2 className="bg-[#191B20] font-semibold text-sm text-white leading-6 font-noto py-3 pl-7 rounded-[10px]">
           Address
         </h2>
-        <div className="grid grid-cols-2 p-8">
+        <div className="grid sm:grid-cols-2 gap-8 p-8">
           <div className="flex flex-col gap-8">
             <div className="flex flex-col gap-2">
               <p className="font-semibold text-base text-[#CACACA] leading-6 font-noto">
@@ -116,7 +116,7 @@ const ContentDetail = () => {
               </p>
             </div>
           </div>
-          <div className="flex flex-col gap-8">
+          <div className="flex flex-col gap-8 sm:place-items-center md:place-items-start">
             <div className="flex flex-col gap-2">
               <p className="font-semibold text-base text-[#CACACA] leading-6 font-noto">
                 City
@@ -140,7 +140,7 @@ const ContentDetail = () => {
         <h2 className="bg-[#191B20] font-semibold text-sm text-white leading-6 font-noto py-3 pl-7 rounded-[10px]">
           Video
         </h2>
-        <div className="my-16 h-100 w-full">
+        <div className="my-16 h-70 sm:h-100 w-full">
           <video controls className="w-full h-full object-cover rounded-lg">
             <source src="/videos/libraryVideo.mp4" type="video/mp4" />
           </video>
@@ -151,7 +151,7 @@ const ContentDetail = () => {
           Cover Image
         </h2>
         <div className="my-15">
-          <img src={coverImage} className="w-full h-100" />
+          <img src={coverImage} className="w-full h-70 sm:h-100" />
         </div>
       </div>
     </div>

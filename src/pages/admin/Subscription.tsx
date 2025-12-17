@@ -13,21 +13,21 @@ const Subscription = () => {
     navigate("/admin/edit-subscription");
   };
   return (
-    <div className="p-15 flex flex-col gap-11">
-      <h1 className="font-bold text-[2rem] leading-10 font-noto text-white">
+    <div className="px-5 sm:px-10 pt-18 lg:pt-10 flex flex-col gap-5 md:gap-11">
+      <h1 className="font-bold text-3xl md:text-[2rem] leading-10 font-noto text-white">
         Subscription
       </h1>
       <div>
-        <h2 className="font-semibold text-[2rem] leading-11 font-noto text-white">
+        <h2 className="font-semibold text-2xl sm:text-[2rem] leading-11 font-noto text-white">
           Get the best pricing plan
         </h2>
-        <p className="font-normal text-lg leading-9 font-noto text-[#929292] my-3">
+        <p className="font-normal text-base sm:text-lg leading-7 sm:leading-9 font-noto text-[#929292] my-3">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
       </div>
-      <div className="grid grid-cols-2 gap-12">
-        <div className="bg-[#191B20] px-10 py-8 flex flex-col gap-8 relative">
+      <div className="grid md:grid-cols-2 gap-6">
+        <div className="bg-[#191B20] px-8 py-8 flex flex-col gap-8 relative">
           <span
             className="text-[#9B9B9B] text-sm absolute right-4 top-4 cursor-pointer"
             onClick={clickHandler}
@@ -65,7 +65,7 @@ const Subscription = () => {
             Select Now
           </button>
         </div>
-        <div className="bg-[#191B20] px-10 py-8 flex flex-col gap-8 relative">
+        <div className="bg-[#191B20] px-8 py-8 flex flex-col gap-8 relative">
           <span
             className="text-[#9B9B9B] text-sm absolute right-4 top-4 cursor-pointer"
             onClick={clickHandler}

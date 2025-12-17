@@ -11,11 +11,11 @@ let planList = [
 
 const PlanChecks = ({ plan }: any) => {
   return (
-    <div className="flex w-full justify-between my-2">
+    <div className="flex w-full justify-between my-8 sm:my-2">
       <p className="text-[#CACACA] font-medium text-base font-noto leading-9">
         {plan}
       </p>
-      <div className="text-[#CACACA] flex gap-13">
+      <div className="text-[#CACACA] flex gap-5 sm:gap-13">
         <label>
           <input
             type="radio"
@@ -41,16 +41,16 @@ const PlanChecks = ({ plan }: any) => {
 
 const EditSubscription = () => {
   return (
-    <div className="p-12 flex flex-col gap-8">
-      <h1 className="font-bold text-[2rem] leading-10 font-noto text-white">
-        <FontAwesomeIcon icon={faArrowLeft} className="mr-4 cursor-pointer" />{" "}
+    <div className="px-5 sm:px-12 pb-12 pt-18 lg:pt-12 flex flex-col gap-5 md:gap-8">
+      <h1 className="font-bold text-3xl md:text-[2rem] leading-10 font-noto text-white">
+        <FontAwesomeIcon icon={faArrowLeft} className="mr-2 cursor-pointer" />
         Edit Subscription
       </h1>
       <div>
-        <h2 className="font-semibold text-[2rem] leading-11 font-noto text-white">
+        <h2 className="font-semibold text-2xl md:text-[2rem] leading-11 font-noto text-white">
           Get the best pricing plan
         </h2>
-        <p className="font-normal text-lg leading-9 font-noto text-[#929292] my-1">
+        <p className="font-normal text-base md:text-lg leading-6 md:leading-9 font-noto text-[#929292] my-1">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>

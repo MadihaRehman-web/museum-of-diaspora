@@ -22,7 +22,7 @@ const Sidebar = () => {
     <>
       <button
         onClick={() => setOpen(true)}
-        className="lg:hidden fixed top-5 left-5 z-50 text-white text-2xl"
+        className="lg:hidden fixed top-5 left-5 z-50 text-white text-2xl cursor-pointer"
       >
         <FontAwesomeIcon icon={faBars} />
       </button>
@@ -41,7 +41,7 @@ const Sidebar = () => {
       >
         <button
           onClick={() => setOpen(false)}
-          className="lg:hidden absolute top-5 right-5 text-white text-2xl"
+          className="lg:hidden absolute top-5 right-5 text-white text-2xl cursor-pointer"
         >
           <FontAwesomeIcon icon={faXmark} />
         </button>

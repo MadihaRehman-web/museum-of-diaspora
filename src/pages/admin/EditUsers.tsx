@@ -4,13 +4,13 @@ import { Input, SelectOption } from "../../components";
 
 const EditUsers = () => {
   return (
-    <div className="p-15">
-      <h1 className="font-bold text-[2rem] leading-10 font-noto text-white">
+    <div className="px-8 sm:px-15 py-16">
+      <h1 className="font-bold text-3xl sm:text-[2rem] leading-10 font-noto text-white">
         <FontAwesomeIcon icon={faArrowLeft} className="mr-4 cursor-pointer" />
         Users Info
       </h1>
       <div>
-        <div className="w-2/3 my-12">
+        <div className="w-full sm:w-2/3 my-8 sm:my-12">
           <h2 className="text-[#CACACA] font-semibold text-xl leading-10 font-noto border-b border-[#454545] pb-3 mb-8">
             UserPersonal Information
           </h2>
