@@ -1,12 +1,21 @@
+import { useNavigate } from "react-router-dom";
+import { Input, SelectOption } from "../../components";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Input, SelectOption } from "../../components";
 
 const EditUsers = () => {
+  const navigate = useNavigate();
+  const clickHandler = () => {
+    navigate(-1);
+  };
   return (
     <div className="px-8 sm:px-15 py-16">
       <h1 className="font-bold text-3xl sm:text-[2rem] leading-10 font-noto text-white">
-        <FontAwesomeIcon icon={faArrowLeft} className="mr-4 cursor-pointer" />
+        <FontAwesomeIcon
+          icon={faArrowLeft}
+          className="mr-4 cursor-pointer"
+          onClick={clickHandler}
+        />
         Users Info
       </h1>
       <div>

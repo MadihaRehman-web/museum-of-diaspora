@@ -3,6 +3,7 @@ type dropDownType = {
   name: string;
   label: string;
   required?: boolean;
+  defaultValue?: string;
   optionList: string[];
 };
 import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
@@ -14,6 +15,7 @@ const SelectOption: React.FC<dropDownType> = ({
   label,
   required = true,
   optionList,
+  defaultValue,
 }) => {
   return (
     <div className="flex flex-col my-4">
@@ -30,6 +32,7 @@ const SelectOption: React.FC<dropDownType> = ({
           id={id}
           className="bg-[#191B20] text-[#CACACA] border border-[#454545] outline-0 py-2 pl-4 pr-8 appearance-none font-noto w-full cursor-pointer"
         >
+          {defaultValue && <option hidden>{defaultValue}</option>}
           {optionList.map((value: string) => {
             return <option value={value}>{value}</option>;
           })}

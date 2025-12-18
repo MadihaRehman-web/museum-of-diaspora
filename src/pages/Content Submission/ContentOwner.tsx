@@ -1,6 +1,11 @@
-import { AuthBtn, Input, SelectOption } from "../components";
+import { useNavigate } from "react-router-dom";
+import { AuthBtn, Input, SelectOption } from "../../components";
 
-const ContentSubmission = () => {
+const ContentOwner = () => {
+  const navigate = useNavigate();
+  const clickHandler = () => {
+    navigate("/content-information");
+  };
   return (
     <div className="bg-[#121418] py-18 px-8 lg:px-28 pt-[calc(var(--header-height)+4rem)]">
       <h1 className="font-bold text-2xl sm:text-[2rem] leading-10 font-noto text-white mb-5 sm:mb-10">
@@ -9,7 +14,7 @@ const ContentSubmission = () => {
       <div className="grid gap-15 md:grid-cols-2">
         <div>
           <h2 className="font-semibold text-xl leading-10 font-noto border-b pb-2 border-[#454545] text-[#CACACA] ">
-            Submitter Information
+            Content Owner Information
           </h2>
           <div className="mt-10">
             <Input label="Name" type="text" id="name" required={false} />
@@ -21,36 +26,11 @@ const ContentSubmission = () => {
               id="entity"
               required={false}
             />
-            <div className="text-[#CACACA] flex justify-between my-10">
-              <p className="font-semibold text-base leading-6 font-noto ">
-                Are you Content Owner?
-              </p>
-              <div className="flex gap-7">
-                <label>
-                  <input
-                    type="radio"
-                    name="contentOwner"
-                    value="Yes"
-                    className="appearance-none w-4 h-4 border-2 border-gray-400 rounded-full checked:bg-gray-400"
-                  />{" "}
-                  &nbsp;Yes
-                </label>
-                <label>
-                  <input
-                    type="radio"
-                    name="contentOwner"
-                    value="No"
-                    className="appearance-none w-4 h-4 border-2 border-gray-400 rounded-full checked:bg-gray-400"
-                  />{" "}
-                  &nbsp;No
-                </label>
-              </div>
-            </div>
           </div>
         </div>
         <div>
           <h2 className="font-semibold text-xl leading-10 font-noto border-b pb-2 border-[#454545] text-[#CACACA] ">
-            Submitter Address
+            Content Owner Address
           </h2>
           <div className="mt-10">
             <Input
@@ -79,7 +59,7 @@ const ContentSubmission = () => {
               optionList={["United Kingdom", "USA", "Canada", "Lahore"]}
             />
             <div className="mt-15">
-              <AuthBtn label="Next" />
+              <AuthBtn label="Next" clickHandler={clickHandler} />
             </div>
           </div>
         </div>
@@ -87,4 +67,4 @@ const ContentSubmission = () => {
     </div>
   );
 };
-export default ContentSubmission;
+export default ContentOwner;

@@ -1,5 +1,5 @@
-import { CTASection, HeroSection, GallarySlider, Support } from "../components";
 import backGround from "../assets/hero-section-home-back.svg";
+import { CTASection, HeroSection, GallarySlider, Support } from "../components";
 
 const Home: React.FC = () => {
   return (
@@ -26,6 +26,7 @@ const Home: React.FC = () => {
         heading="We need your support"
         description="Your support is vital and helps the Museum to share the collection with the world."
         btnText="Make a donation"
+        authElement={false}
       />
 
       {/* Mesume Support  */}

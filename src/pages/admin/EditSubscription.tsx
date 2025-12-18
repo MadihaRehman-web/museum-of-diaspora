@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import { Input, SelectOption } from "../../components";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -40,10 +41,18 @@ const PlanChecks = ({ plan }: any) => {
 };
 
 const EditSubscription = () => {
+  const navigate = useNavigate();
+  const clickHandler = () => {
+    navigate(-1);
+  };
   return (
     <div className="px-5 sm:px-12 pb-12 pt-18 lg:pt-12 flex flex-col gap-5 md:gap-8">
       <h1 className="font-bold text-3xl md:text-[2rem] leading-10 font-noto text-white">
-        <FontAwesomeIcon icon={faArrowLeft} className="mr-2 cursor-pointer" />
+        <FontAwesomeIcon
+          icon={faArrowLeft}
+          className="mr-4 cursor-pointer"
+          onClick={clickHandler}
+        />
         Edit Subscription
       </h1>
       <div>

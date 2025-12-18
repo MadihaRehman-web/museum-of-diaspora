@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import playSymbol from "../assets/playSymbol.png";
 
 const Video = () => {
-  const docVideoRef = useRef(null);
+  const docVideoRef = useRef<any>(undefined);
   const [videoMode, setVideoMode] = useState(false);
 
   useEffect(() => {
@@ -14,7 +14,7 @@ const Video = () => {
   }, [videoMode]);
 
   return (
-    <div className="relative max-h-[470px] w-full">
+    <div className="relative max-h-[470px] w-full cursor-pointer">
       <video
         className="object-cover h-full w-full "
         ref={docVideoRef}
@@ -24,7 +24,7 @@ const Video = () => {
       </video>
       <img
         src={playSymbol}
-        className={`absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] ${
+        className={`absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] hover:scale-[1.2] ${
           videoMode ? "hidden" : "block"
         }`}
         onClick={() => setVideoMode(!videoMode)}

@@ -18,10 +18,10 @@ import ProfileLink from "./ProfileLink";
 import InputWraper from "./InputWraper";
 import SocialSignUp from "./SocialSignUp";
 import SelectOption from "./SelectOption";
-import LogInInfo from "./login/LogInInfo";
 import Otp from "./ChangeResetPassword/Otp";
 import GallarySlider from "./GallarySlider";
 import SignInInfo from "./signup/SignInInfo";
+import OptionalWraper from "./OptionalWraper";
 import PersonalInfo from "./signup/PersonalInfo";
 import ChangeEmail from "./ChangeResetPassword/ChangeEmail";
 import MembershipRegister from "./signup/MembershipRegister";
@@ -43,7 +43,6 @@ export {
   Explore,
   OtpInput,
   UserCard,
-  LogInInfo,
   CTASection,
   BreadCrumb,
   SignInInfo,
@@ -55,6 +54,7 @@ export {
   SelectOption,
   PersonalInfo,
   GallarySlider,
+  OptionalWraper,
   ChangePassword,
   ConfirmPassword,
   MembershipRegister,

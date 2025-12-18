@@ -1,6 +1,6 @@
 const Card = ({ img, heading, description }: any) => {
   return (
-    <div className="bg-[#23262D] ">
+    <div className="bg-[#23262D] cursor-pointer">
       <div>
         <img src={img} alt="" className="w-full h-55" />
       </div>

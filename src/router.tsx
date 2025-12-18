@@ -14,15 +14,17 @@ import {
   Dashboard,
   AdminLayout,
   Subscription,
+  ContentOwner,
   SocialSignUp,
   Documentation,
   ContentDetail,
   ForgetPassword,
   EditSubscription,
+  ContentSubmitter,
   CreateNewPassword,
-  ContentSubmission,
   ContentDetailAdmin,
   ChangeResetPassword,
+  ContentInfo,
 } from "./pages";
 
 const router = createBrowserRouter([
@@ -87,8 +89,16 @@ const router = createBrowserRouter([
         element: <Curator />,
       },
       {
-        path: "content",
-        element: <ContentSubmission />,
+        path: "content-submitter",
+        element: <ContentSubmitter />,
+      },
+      {
+        path: "content-owner",
+        element: <ContentOwner />,
+      },
+      {
+        path: "content-information",
+        element: <ContentInfo />,
       },
       {
         path: "FAQs",

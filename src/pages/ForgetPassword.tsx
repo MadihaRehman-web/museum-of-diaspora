@@ -1,6 +1,13 @@
+import { useNavigate } from "react-router-dom";
 import { Input, AuthBtn } from "../components";
 
 const ForgetPassword = () => {
+  const navigate = useNavigate();
+
+  const clickHandler = () => {
+    navigate("/create-new-password");
+  };
+
   return (
     <div className="bg-[#121418] pt-(--header-height)">
       <div className="px-10 xl:px-20 pt-15 pb-35 md:w-1/2 ">
@@ -17,7 +24,7 @@ const ForgetPassword = () => {
         <form className="pt-8">
           <Input label="Email" type="email" id="email" />
           <div className="mt-10">
-            <AuthBtn label="Continue" />
+            <AuthBtn label="Continue" clickHandler={clickHandler} />
           </div>
         </form>
       </div>

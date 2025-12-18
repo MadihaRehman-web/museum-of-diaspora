@@ -1,6 +1,11 @@
 import TableData from "../../apis/adminTable";
+import { useNavigate } from "react-router-dom";
 
 const Table = () => {
+  const navigate = useNavigate();
+  const clickHandler = () => {
+    navigate("/admin/content-detail-admin");
+  };
   return (
     <table className="w-full my-8">
       <thead>
@@ -25,7 +30,11 @@ const Table = () => {
       <tbody className="text-white font-medium overflow-x-auto text-base leading-6">
         {TableData.map((items, index) => {
           return (
-            <tr className="my-8" key={index}>
+            <tr
+              className="my-8 cursor-pointer"
+              key={index}
+              onClick={clickHandler}
+            >
               <td className="p-3">
                 <img
                   src={items.img}

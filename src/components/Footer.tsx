@@ -5,10 +5,20 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import Icon from "./Icon";
 import siteLogo from "../assets/site-logo.svg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCircleArrowUp } from "@fortawesome/free-solid-svg-icons";
 
-let iconsName = [faInstagram, faLinkedinIn, faFacebookF];
+let iconsName = [
+  { icon: faInstagram, link: "https://www.instagram.com/" },
+  { icon: faLinkedinIn, link: "https://www.linkedin.com/" },
+  { icon: faFacebookF, link: "https://www.facebook.com/" },
+];
 
 const Footer: React.FC = () => {
+  const clickHandler = () => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  };
+
   return (
     <div className="bg-black">
       <div className="px-5 sm:px-15 lg:px-23 pt-10 sm:pt-22 pb-12 grid md:grid-cols-2 gap-8">
@@ -17,8 +27,8 @@ const Footer: React.FC = () => {
             Connect with us
           </p>
           <div className="flex gap-4">
-            {iconsName.map((iconName, index) => (
-              <Icon iconName={iconName} key={index} />
+            {iconsName.map(({ icon, link }, index) => (
+              <Icon iconName={icon} link={link} key={index} />
             ))}
           </div>
         </div>
@@ -36,7 +46,13 @@ const Footer: React.FC = () => {
               Sign up
             </button>
           </form>
-          <p className="text-white text-end">Back to the top</p>
+          <p
+            className="text-white text-end cursor-pointer"
+            onClick={clickHandler}
+          >
+            Back to the top &nbsp;
+            <FontAwesomeIcon icon={faCircleArrowUp} />
+          </p>
         </div>
       </div>
 

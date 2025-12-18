@@ -21,45 +21,6 @@ const Curator = () => {
               </tr>
             </thead>
             <tbody>
-              <tr className=" ">
-                <td>
-                  <img
-                    src="/CuratorImages/curator1.jpg"
-                    alt=""
-                    className="h-18 max-w-18 object-cover rounded-md"
-                  />
-                </td>
-                <td>
-                  <p className="font-noto text-base text-white font-medium leading-6 ">
-                    Excepteur sint occaecat cupidatat non proid.
-                  </p>
-                </td>
-                <td>
-                  <p className="font-noto text-base text-white font-medium leading-6 ">
-                    John Doe
-                  </p>
-                </td>
-                <td>
-                  <select name="galleryName" className="bg-black text-white">
-                    <option value="">eiusmod tempor incididunt</option>
-                    <option value="">Duis aute irure dolor in</option>
-                    <option value="">Excepteur sinta</option>
-                  </select>
-                </td>
-                <td className="font-noto text-base text-white font-medium leading-6 text-center">
-                  North America
-                </td>
-                <td>
-                  <select
-                    name="status"
-                    className="bg-black text-white text-center"
-                  >
-                    <option value="">Accept</option>
-                    <option value="">Reject</option>
-                    <option value="">Flag</option>
-                  </select>
-                </td>
-              </tr>
               <tr className="">
                 <td>
                   <img
@@ -91,7 +52,7 @@ const Curator = () => {
                 <td>
                   <select
                     name="status"
-                    className="bg-black text-white text-center"
+                    className="text-black text-center bg-green-500 py-1 px-1 rounded"
                   >
                     <option value="">Accept</option>
                     <option value="">Reject</option>

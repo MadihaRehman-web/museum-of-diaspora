@@ -4,7 +4,7 @@ import Login from "./Login";
 import SignUp from "./SignUp";
 import Curator from "./Curator";
 import Profile from "./Profile";
-import Users from "./admin/users";
+import Users from "./admin/Users";
 import Galleries from "./Galleries";
 import SupportUs from "./SupportUs";
 import Dashboard from "./admin/Dashboard";
@@ -15,11 +15,13 @@ import Documentation from "./Documentation";
 import ForgetPassword from "./ForgetPassword";
 import Subscription from "./admin/Subscription";
 import CreateNewPassword from "./CreateNewPassword";
-import ContentSubmission from "./ContentSubmission";
 import ChangeResetPassword from "./ChangeResetPassword";
 import EditSubscription from "./admin/EditSubscription";
 import AdminLayout from "../components/admin/AdminLayout";
+import ContentInfo from "./Content Submission/ContentInfo";
 import ContentDetailAdmin from "./admin/ContentDetailAdmin";
+import ContentOwner from "./Content Submission/ContentOwner";
+import ContentSubmitter from "./Content Submission/ContentSubmitter";
 
 export {
   FAQs,
@@ -34,14 +36,16 @@ export {
   EditUsers,
   Dashboard,
   AdminLayout,
+  ContentInfo,
   Subscription,
   SocialSignUp,
   Documentation,
+  ContentOwner,
   ContentDetail,
   ForgetPassword,
+  ContentSubmitter,
   EditSubscription,
   CreateNewPassword,
-  ContentSubmission,
   ContentDetailAdmin,
   ChangeResetPassword,
 };
