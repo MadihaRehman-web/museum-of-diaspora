@@ -1,11 +1,22 @@
+import { useNavigate } from "react-router-dom";
 import coverImage from "../../assets/coverImage.png";
-import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAngleDown, faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 
 const ContentDetail = () => {
+  const navigate = useNavigate();
+  const clickHandler = () => {
+    navigate(-1);
+  };
+
   return (
     <div className="px-8 sm:px-11 py-15">
       <h1 className="text-white font-noto text-3xl md:text-[2rem] leading-10 font-bold mb-10">
+        <FontAwesomeIcon
+          icon={faArrowLeft}
+          className="mr-4 cursor-pointer"
+          onClick={clickHandler}
+        />
         Content Detail
       </h1>
       <div className="grid sm:grid-cols-2 gap-8">

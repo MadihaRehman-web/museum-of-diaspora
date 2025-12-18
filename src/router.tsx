@@ -27,6 +27,7 @@ import {
   ContentDetailAdmin,
   ChangeResetPassword,
 } from "./pages";
+import { Error } from "./components";
 
 const router = createBrowserRouter([
   {
@@ -144,6 +145,10 @@ const router = createBrowserRouter([
         element: <EditSubscription />,
       },
     ],
+  },
+  {
+    path: "*",
+    element: <Error />,
   },
 ]);
 

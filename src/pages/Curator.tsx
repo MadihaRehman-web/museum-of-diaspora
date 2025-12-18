@@ -70,17 +70,14 @@ const Table = () => {
         </thead>
         <tbody className="text-white font-medium overflow-x-auto text-base leading-6">
           {tableData.map((item, index) => (
-            <tr
-              className="my-8 cursor-pointer"
-              key={index}
-              onClick={() => {
-                navigate("/curator-details");
-              }}
-            >
+            <tr className="my-8" key={index}>
               <td className="p-3">
                 <img
                   src={item.image}
-                  className="h-18 w-18 object-cover rounded-md"
+                  className="h-18 w-18 object-cover rounded-md cursor-pointer"
+                  onClick={() => {
+                    navigate("/curator-details");
+                  }}
                 />
               </td>
               <td className="p-3">

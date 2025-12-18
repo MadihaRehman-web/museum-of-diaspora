@@ -1,6 +1,7 @@
 import Card from "./Card";
 import Input from "./Input";
 import Video from "./Video";
+import Error from "./Error";
 import Header from "./Header";
 import Footer from "./Footer";
 import Layout from "./Layout";
@@ -34,6 +35,7 @@ export {
   Card,
   Video,
   Input,
+  Error,
   Header,
   Footer,
   Layout,
