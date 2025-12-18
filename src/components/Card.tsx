@@ -1,6 +1,13 @@
-const Card = ({ img, heading, description }: any) => {
+type CardType = {
+  img: string;
+  heading: string;
+  description: string;
+  clickHandler?: () => void;
+};
+
+const Card = ({ img, heading, description, clickHandler }: CardType) => {
   return (
-    <div className="bg-[#23262D] cursor-pointer">
+    <div className="bg-[#23262D] cursor-pointer" onClick={clickHandler}>
       <div>
         <img src={img} alt="" className="w-full h-55" />
       </div>

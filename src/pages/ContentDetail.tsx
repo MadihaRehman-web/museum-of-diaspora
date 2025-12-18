@@ -3,7 +3,7 @@ import g1 from "../assets/gallery/g1.png";
 import g2 from "../assets/gallery/g2.png";
 import g3 from "../assets/gallery/g3.png";
 import g4 from "../assets/gallery/g4.png";
-import { Card, CTASection, HeroSection } from "../components";
+import { BreadCrumb, Card, CTASection, HeroSection } from "../components";
 import backGround from "../assets/hero-section-home-back.svg";
 
 let mesumeList = [
@@ -49,12 +49,19 @@ const ContentDetail = () => {
           </p>
         </div>
       </HeroSection>
-      <div className="p-8 md:p-10 xl:p-25">
+      <BreadCrumb
+        items={[
+          { label: "Home", path: "/home" },
+          { label: "Galleries", path: "/galleries" },
+          { label: "The Sir Paul and Lady Ruddock Gallery" },
+        ]}
+      />
+      <div className="mx-8 md:mx-10 xl:mx-23 border-t border-[#454545] pt-12 pb-20">
         <h2 className="font-medium font-noto text-white text-2xl sm:text-[2.5rem] leading-11 mb-8 sm:mb-12">
           Explore the fascinating history.
         </h2>
         <div className="flex flex-col md:flex-row gap-10 lg:gap-25">
-          <div className="md:w-2/3 h-100 bg-amber-300">
+          <div className="md:w-2/3 h-100">
             <img src="/coverImage.jpg" className="w-full h-full object-cover" />
           </div>
           <div>

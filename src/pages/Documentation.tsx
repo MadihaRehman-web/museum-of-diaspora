@@ -27,7 +27,9 @@ const Documentation = () => {
         </h1>
       </HeroSection>
 
-      <BreadCrumb currentPage="Documentation" />
+      <BreadCrumb
+        items={[{ label: "Home", path: "/home" }, { label: "Documentation" }]}
+      />
 
       <div className="grid gap-y-15 mx-8 sm:mx-15 lg:mx-25 pt-18 pb-10 border-y border-[#454545]">
         <Video />

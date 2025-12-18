@@ -45,16 +45,16 @@ const router = createBrowserRouter([
         element: <Galleries />,
       },
       {
+        path: "/galleries/content-detail",
+        element: <ContentDetail />,
+      },
+      {
         path: "documentation",
         element: <Documentation />,
       },
       {
         path: "supportus",
         element: <SupportUs />,
-      },
-      {
-        path: "content-detail",
-        element: <ContentDetail />,
       },
       {
         path: "signup",

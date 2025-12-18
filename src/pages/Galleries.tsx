@@ -10,8 +10,10 @@ import {
   CTASection,
   HeroSection,
 } from "../components";
+import { useNavigate } from "react-router-dom";
 
 const Galleries = () => {
+  const navigate = useNavigate();
   const [galleryCards, setGallaryCards] = useState<GallaryCardType[]>([]);
 
   useEffect(() => {
@@ -26,7 +28,9 @@ const Galleries = () => {
         </h1>
       </HeroSection>
 
-      <BreadCrumb currentPage="Galleries" />
+      <BreadCrumb
+        items={[{ label: "Home", path: "/home" }, { label: "Galleries" }]}
+      />
 
       <div className="flex flex-col lg:flex-row gap-x-20 xl:gap-x-50 mx-5 sm:mx-15 xl:mx-25 pt-18 pb-28 border-y border-[#454545]">
         <Explore
@@ -49,9 +53,18 @@ const Galleries = () => {
           Gallery Highlights
         </h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-          {galleryCards.map(({ img, heading, description }) => {
+          {galleryCards.map((item) => {
             return (
-              <Card img={img} heading={heading} description={description} />
+              <Card
+                img={item.img}
+                heading={item.heading}
+                description={item.description}
+                clickHandler={() =>
+                  navigate("/galleries/content-detail", {
+                    state: item,
+                  })
+                }
+              />
             );
           })}
         </div>

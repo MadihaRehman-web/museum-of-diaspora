@@ -17,7 +17,9 @@ const SupportUs = () => {
         </h1>
       </HeroSection>
 
-      <BreadCrumb currentPage="Support Us" />
+      <BreadCrumb
+        items={[{ label: "Home", path: "/home" }, { label: "Support Us" }]}
+      />
 
       <div className="flex flex-col lg:flex-row gap-x-15 xl:gap-x-50 mx-8 md:mx-25 pt-18 pb-28 border-y border-[#454545]">
         <Explore

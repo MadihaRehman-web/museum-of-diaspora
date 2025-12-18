@@ -1,17 +1,32 @@
 import { NavLink } from "react-router-dom";
 
-type PageType = {
-  currentPage: string;
+type BreadCrumbProps = {
+  label: string;
+  path?: string;
 };
 
-const BreadCrumb: React.FC<PageType> = ({ currentPage }) => {
+type BreadCrumbItems = {
+  items: BreadCrumbProps[];
+};
+
+const BreadCrumb: React.FC<BreadCrumbItems> = ({ items }) => {
   return (
     <div className="flex items-center gap-4 text-lg sm:text-xl leading-10 font-noto px-8 sm:px-25 py-5">
-      <NavLink to={"/home"} className={`underline text-white font-bold pb-0`}>
-        Home
-      </NavLink>
-      <span className="text-[#9B9B9B] font-medium">&gt;</span>
-      <p className="font-medium text-[#9B9B9B]">{currentPage}</p>
+      {items.map((item) =>
+        item.path ? (
+          <>
+            <NavLink
+              to={item.path}
+              className={`underline text-white font-bold pb-0`}
+            >
+              {item.label}
+            </NavLink>
+            <span className="text-[#9B9B9B] font-medium">&gt;</span>
+          </>
+        ) : (
+          <p className="font-medium text-[#9B9B9B]">{item.label}</p>
+        )
+      )}
     </div>
   );
 };
