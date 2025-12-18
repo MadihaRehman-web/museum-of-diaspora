@@ -33,8 +33,12 @@ const SelectOption: React.FC<dropDownType> = ({
           className="bg-[#191B20] text-[#CACACA] border border-[#454545] outline-0 py-2 pl-4 pr-8 appearance-none font-noto w-full cursor-pointer"
         >
           {defaultValue && <option hidden>{defaultValue}</option>}
-          {optionList.map((value: string) => {
-            return <option value={value}>{value}</option>;
+          {optionList.map((value: string, index) => {
+            return (
+              <option value={value} key={index}>
+                {value}
+              </option>
+            );
           })}
         </select>
         <span className="absolute text-[#CACACA] right-5 top-2 pointer-events-none">

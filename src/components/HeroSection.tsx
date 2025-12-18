@@ -6,7 +6,7 @@ const HeroSection = ({ backGround, children, element }: any) => {
       } `}
       style={{ backgroundImage: `url(${backGround})` }}
     >
-      <div className="absolute sm:bottom-[12%] sm:left-[11%] left-5 bottom-10">
+      <div className="absolute sm:bottom-[10%] sm:left-[6.5%] left-5 bottom-10">
         {children}
       </div>
     </div>

@@ -1,4 +1,6 @@
 import backGround from "../assets/hero-section-home-back.svg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCircleRight } from "@fortawesome/free-regular-svg-icons";
 import { CTASection, HeroSection, GallarySlider, Support } from "../components";
 
 const Home: React.FC = () => {
@@ -13,8 +15,9 @@ const Home: React.FC = () => {
             Experience cultures across the globe, from the dawn of human history
             to the present
           </p>
-          <button className="bg-black text-white font-semibold text-sm font-noto leading-6 py-3 text-start px-5 cursor-pointer">
-            Plan your visit
+          <button className="bg-black text-white font-semibold text-sm font-noto leading-6 py-3 text-start px-5 cursor-pointer flex justify-between items-center">
+            <p>Plan your visit</p>
+            <FontAwesomeIcon icon={faCircleRight} className="text-base" />
           </button>
         </div>
       </HeroSection>

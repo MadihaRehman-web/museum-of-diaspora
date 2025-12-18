@@ -53,7 +53,7 @@ const Galleries = () => {
           Gallery Highlights
         </h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-          {galleryCards.map((item) => {
+          {galleryCards.map((item, index) => {
             return (
               <Card
                 img={item.img}
@@ -64,6 +64,7 @@ const Galleries = () => {
                     state: item,
                   })
                 }
+                key={index}
               />
             );
           })}

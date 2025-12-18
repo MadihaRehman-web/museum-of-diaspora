@@ -12,24 +12,25 @@ import {
   EditUsers,
   Galleries,
   Dashboard,
+  ContentInfo,
   AdminLayout,
   Subscription,
   ContentOwner,
   SocialSignUp,
   Documentation,
   ContentDetail,
+  CuratorDetails,
   ForgetPassword,
   EditSubscription,
   ContentSubmitter,
   CreateNewPassword,
   ContentDetailAdmin,
   ChangeResetPassword,
-  ContentInfo,
 } from "./pages";
 
 const router = createBrowserRouter([
   {
-    path: "/", // GrandParent
+    path: "/",
     element: <Layout />,
     children: [
       {
@@ -87,6 +88,10 @@ const router = createBrowserRouter([
       {
         path: "curator",
         element: <Curator />,
+      },
+      {
+        path: "curator-details",
+        element: <CuratorDetails />,
       },
       {
         path: "content-submitter",

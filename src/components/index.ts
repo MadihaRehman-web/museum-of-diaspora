@@ -8,6 +8,7 @@ import Support from "./Support";
 import Explore from "./Explore";
 import Contact from "./Contact";
 import OtpInput from "./OtpInput";
+import Accordian from "./Accordian";
 import Sidebar from "./admin/Sidebar";
 import CTASection from "./CTASection";
 import BreadCrumb from "./BreadCrumb";
@@ -43,6 +44,7 @@ export {
   Explore,
   OtpInput,
   UserCard,
+  Accordian,
   CTASection,
   BreadCrumb,
   SignInInfo,

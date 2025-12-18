@@ -3,8 +3,10 @@ import g1 from "../assets/gallery/g1.png";
 import g2 from "../assets/gallery/g2.png";
 import g3 from "../assets/gallery/g3.png";
 import g4 from "../assets/gallery/g4.png";
-import { BreadCrumb, Card, CTASection, HeroSection } from "../components";
 import backGround from "../assets/hero-section-home-back.svg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSquareCaretRight } from "@fortawesome/free-solid-svg-icons";
+import { BreadCrumb, Card, CTASection, HeroSection } from "../components";
 
 let mesumeList = [
   {
@@ -49,13 +51,15 @@ const ContentDetail = () => {
           </p>
         </div>
       </HeroSection>
-      <BreadCrumb
-        items={[
-          { label: "Home", path: "/home" },
-          { label: "Galleries", path: "/galleries" },
-          { label: "The Sir Paul and Lady Ruddock Gallery" },
-        ]}
-      />
+      <div className="mt-12">
+        <BreadCrumb
+          items={[
+            { label: "Home", path: "/home" },
+            { label: "Galleries", path: "/galleries" },
+            { label: "The Sir Paul and Lady Ruddock Gallery" },
+          ]}
+        />
+      </div>
       <div className="mx-8 md:mx-10 xl:mx-23 border-t border-[#454545] pt-12 pb-20">
         <h2 className="font-medium font-noto text-white text-2xl sm:text-[2.5rem] leading-11 mb-8 sm:mb-12">
           Explore the fascinating history.
@@ -97,8 +101,12 @@ const ContentDetail = () => {
                 www.linkurl.com
               </p>
             </div>
-            <button className="bg-white w-full py-2 font-semibold my-5">
-              Donate Now
+            <button className="bg-white w-full py-2 font-semibold my-5 flex justify-between items-center px-4">
+              <span>Donate Now</span>
+              <FontAwesomeIcon
+                icon={faSquareCaretRight}
+                className="text-base"
+              />
             </button>
           </div>
         </div>
@@ -142,8 +150,13 @@ const ContentDetail = () => {
           You may also be interested in
         </h2>
         <div className="grid sm:grid-cols-2 xl:grid-cols-4 gap-6">
-          {mesumeList.map(({ img, heading, description }) => (
-            <Card img={img} heading={heading} description={description} />
+          {mesumeList.map(({ img, heading, description }, index) => (
+            <Card
+              img={img}
+              heading={heading}
+              description={description}
+              key={index}
+            />
           ))}
         </div>
       </div>

@@ -13,6 +13,7 @@ import EditUsers from "./admin/EditUsers";
 import ContentDetail from "./ContentDetail";
 import Documentation from "./Documentation";
 import ForgetPassword from "./ForgetPassword";
+import CuratorDetails from "./CuratorDetails";
 import Subscription from "./admin/Subscription";
 import CreateNewPassword from "./CreateNewPassword";
 import ChangeResetPassword from "./ChangeResetPassword";
@@ -43,6 +44,7 @@ export {
   ContentOwner,
   ContentDetail,
   ForgetPassword,
+  CuratorDetails,
   ContentSubmitter,
   EditSubscription,
   CreateNewPassword,

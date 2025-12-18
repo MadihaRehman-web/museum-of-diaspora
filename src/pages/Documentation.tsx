@@ -56,8 +56,13 @@ const Documentation = () => {
           Gallery Highlights
         </h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-          {docCards.map(({ img, heading, description }) => (
-            <Card img={img} heading={heading} description={description} />
+          {docCards.map(({ img, heading, description }, index) => (
+            <Card
+              img={img}
+              heading={heading}
+              description={description}
+              key={index}
+            />
           ))}
         </div>
       </div>

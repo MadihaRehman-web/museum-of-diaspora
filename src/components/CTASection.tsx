@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import support from "../assets/support.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCircleRight } from "@fortawesome/free-regular-svg-icons";
 
 const CTASection = ({
   heading,
@@ -24,13 +26,15 @@ const CTASection = ({
             {authElement ? (
               <Link
                 to="/signUp"
-                className="bg-black text-white font-semibold text-sm font-noto leading-6 py-3 text-start px-5 cursor-pointer"
+                className="bg-black text-white font-semibold text-sm font-noto leading-6 py-3 text-start px-5 cursor-pointer flex max-w-max items-center gap-6"
               >
                 {btnText}
+                <FontAwesomeIcon icon={faCircleRight} className="text-base" />
               </Link>
             ) : (
-              <button className="bg-black text-white font-semibold text-sm font-noto leading-6 py-3 text-start px-5 cursor-pointer">
+              <button className="bg-black text-white font-semibold text-sm font-noto leading-6 py-3 text-start px-5 cursor-pointer flex max-w-max items-center gap-10">
                 {btnText}
+                <FontAwesomeIcon icon={faCircleRight} className="text-base" />
               </button>
             )}
           </div>

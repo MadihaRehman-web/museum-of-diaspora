@@ -10,7 +10,7 @@ import {
 const Profile = () => {
   return (
     <div className="pt-(--header-height)">
-      <div className="py-18 px-5 xl:px-45 grid md:grid-cols-4 gap-10 xl:gap-20 ">
+      <div className="py-8 px-5 xl:px-45 grid md:grid-cols-4 gap-10 xl:gap-20 ">
         <ProfileLink />
         <div>
           <h2 className="font-bold text-2xl xl:text-[2rem] leading-10 font-noto text-white">

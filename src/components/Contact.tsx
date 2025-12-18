@@ -1,3 +1,6 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSquareCaretRight } from "@fortawesome/free-solid-svg-icons";
+
 const Contact = () => {
   return (
     <div className="flex flex-col gap-4 1/3">
@@ -24,8 +27,9 @@ const Contact = () => {
         </div>
       </div>
       <div>
-        <button className="bg-white text-black font-semibold text-[16px] font-noto leading-6 py-3 px-5 cursor-pointer my-4">
-          Donate Now
+        <button className="bg-white text-black font-semibold text-[16px] font-noto leading-6 py-3 px-4 w-full cursor-pointer my-4 flex justify-between items-center">
+          <span>Donate Now</span>
+          <FontAwesomeIcon icon={faSquareCaretRight} className="text-base" />
         </button>
       </div>
     </div>

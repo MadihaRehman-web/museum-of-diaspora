@@ -18,8 +18,8 @@ const Explore: React.FC<ExploreType> = ({
         {description}
       </p>
       <ul className="text-[#CACACA] list-disc p-6 font-medium text-lg sm:text-xl leading-7 sm:leading-9 font-noto">
-        {listItems.map((item: string) => (
-          <li>{item}</li>
+        {listItems.map((item: string, index) => (
+          <li key={index}>{item}</li>
         ))}
       </ul>
     </div>
