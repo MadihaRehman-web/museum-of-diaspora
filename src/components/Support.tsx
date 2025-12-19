@@ -1,17 +1,17 @@
 import { Card } from ".";
 import { useEffect, useState } from "react";
-import mesumeCardsList from "../apis/mesumeCardsList";
-import type { MesumeCardType } from "../apis/mesumeCardsList";
+import museumeCardsList from "../apis/museumeCardsList";
+import type { MuseumeCardType } from "../apis/museumeCardsList";
 
 type SupportType = {
   heading: string;
 };
 
-const MesumeSupport: React.FC<SupportType> = ({ heading }) => {
-  const [mesumeCards, setMesumeCards] = useState<MesumeCardType[]>([]);
+const Support: React.FC<SupportType> = ({ heading }) => {
+  const [museumeCards, setMuseumeCards] = useState<MuseumeCardType[]>([]);
 
   useEffect(() => {
-    setMesumeCards(() => mesumeCardsList);
+    setMuseumeCards(() => museumeCardsList);
   }, []);
 
   return (
@@ -20,7 +20,7 @@ const MesumeSupport: React.FC<SupportType> = ({ heading }) => {
         {heading}
       </h2>
       <div className="grid md:grid-cols-3 lg:gap-10 gap-5">
-        {mesumeCards.map(({ img, heading, description }, index) => (
+        {museumeCards.map(({ img, heading, description }, index) => (
           <Card
             img={img}
             heading={heading}
@@ -32,4 +32,4 @@ const MesumeSupport: React.FC<SupportType> = ({ heading }) => {
     </div>
   );
 };
-export default MesumeSupport;
+export default Support;

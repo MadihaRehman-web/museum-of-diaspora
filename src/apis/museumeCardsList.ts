@@ -1,14 +1,14 @@
-import img1 from "../assets/mesume/m1.png";
-import img2 from "../assets/mesume/m2.png";
-import img3 from "../assets/mesume/m3.png";
+import img1 from "../assets/museume/m1.png";
+import img2 from "../assets/museume/m2.png";
+import img3 from "../assets/museume/m3.png";
 
-export type MesumeCardType = {
+export type MuseumeCardType = {
   img: string;
   heading: string;
   description: string;
 };
 
-const mesumeCardsList: MesumeCardType[] = [
+const museumeCardsList: MuseumeCardType[] = [
   {
     img: img1,
     heading: "Besome a Member",
@@ -28,4 +28,4 @@ const mesumeCardsList: MesumeCardType[] = [
       "Duis aute irure reprehenderit volupte velit esse cillum euea fugiat sint occaecat cupidatatam.",
   },
 ];
-export default mesumeCardsList;
+export default museumeCardsList;
