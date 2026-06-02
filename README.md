@@ -38,11 +38,11 @@ As a Frontend Developer, I was responsible for designing and developing the comp
 
 #### Mobile View
 
-<img src="screenshots/responsive-design-1.png" width="50%">
-<img src="screenshots/responsive-design-2.png" width="50%">
-<img src="screenshots/responsive-design-3.png" width="50%">
-<img src="screenshots/responsive-design-4.png" width="50%">
-<img src="screenshots/responsive-design-5.png" width="50%">
+<img src="screenshots/responsive-1.png" width="50%">
+<img src="screenshots/responsive-2.png" width="50%">
+<img src="screenshots/responsive-3.png" width="50%">
+<img src="screenshots/responsive-4.png" width="50%">
+<img src="screenshots/responsive-5.png" width="50%">
 
 ### Links
 
