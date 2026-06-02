@@ -4,7 +4,6 @@
 
 - [Overview](#overview)
   - [Screenshot](#screenshot)
-  - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [Useful resources](#useful-resources)
@@ -43,10 +42,6 @@ As a Frontend Developer, I was responsible for designing and developing the comp
 <img src="screenshots/responsive-3.png" width="50%">
 <img src="screenshots/responsive-4.png" width="50%">
 <img src="screenshots/responsive-5.png" width="50%">
-
-### Links
-
-- Live Site URL: [Live Demo](https://madiharehman-web.github.io/qr-code-component/)
 
 ## My process
 
