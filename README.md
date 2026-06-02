@@ -24,7 +24,7 @@ As a Frontend Developer, I was responsible for designing and developing the comp
 <img src="screenshots/galleries.png" width="50%">
 <img src="screenshots/galleries-details-1.png" width="50%">
 <img src="screenshots/galleries-details-2.png" width="50%">
-<img src="screenshots/documentries.png" width="50%">
+<img src="screenshots/documentaries.png" width="50%">
 <img src="screenshots/change-password.png" width="50%">
 <img src="screenshots/content-submission.png" width="50%">
 <img src="screenshots/create-account.png" width="50%">
