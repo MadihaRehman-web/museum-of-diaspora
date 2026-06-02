@@ -20,29 +20,29 @@ As a Frontend Developer, I was responsible for designing and developing the comp
 
 #### Desktop View
 
-<img src="screenshots/home.png" width="45%">
-<img src="screenshots/galleries.png" width="45%">
-<img src="screenshots/galleries-details-1.png" width="45%">
-<img src="screenshots/galleries-details-2.png" width="45%">
-<img src="screenshots/documentries.png" width="45%">
-<img src="screenshots/change-password.png" width="45%">
-<img src="screenshots/content-submission.png" width="45%">
-<img src="screenshots/create-account.png" width="45%">
-<img src="screenshots/curator.png" width="45%">
-<img src="screenshots/faq.png" width="45%">
-<img src="screenshots/footer.png" width="45%">
-<img src="screenshots/dashboard.png" width="45%">
-<img src="screenshots/users.png" width="45%">
-<img src="screenshots/subscription.png" width="45%">
-<img src="screenshots/profile.png" width="45%">
+<img src="screenshots/home.png" width="50%">
+<img src="screenshots/galleries.png" width="50%">
+<img src="screenshots/galleries-details-1.png" width="50%">
+<img src="screenshots/galleries-details-2.png" width="50%">
+<img src="screenshots/documentries.png" width="50%">
+<img src="screenshots/change-password.png" width="50%">
+<img src="screenshots/content-submission.png" width="50%">
+<img src="screenshots/create-account.png" width="50%">
+<img src="screenshots/curator.png" width="50%">
+<img src="screenshots/faq.png" width="50%">
+<img src="screenshots/footer.png" width="50%">
+<img src="screenshots/dashboard.png" width="50%">
+<img src="screenshots/users.png" width="50%">
+<img src="screenshots/subscription.png" width="50%">
+<img src="screenshots/profile.png" width="50%">
 
 #### Mobile View
 
-<img src="screenshots/responsive-design-1.png" width="45%">
-<img src="screenshots/responsive-design-2.png" width="45%">
-<img src="screenshots/responsive-design-3.png" width="45%">
-<img src="screenshots/responsive-design-4.png" width="45%">
-<img src="screenshots/responsive-design-5.png" width="45%">
+<img src="screenshots/responsive-design-1.png" width="50%">
+<img src="screenshots/responsive-design-2.png" width="50%">
+<img src="screenshots/responsive-design-3.png" width="50%">
+<img src="screenshots/responsive-design-4.png" width="50%">
+<img src="screenshots/responsive-design-5.png" width="50%">
 
 ### Links
 
